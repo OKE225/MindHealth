@@ -1,20 +1,15 @@
-import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router";
+import LandingPage from "./pages/LandingPage";
+import ApplicationPage from "./pages/ApplicationPage";
+import ChatPage from "./pages/ChatPage";
 
 const App = () => {
-  const [message, setMessage] = useState<string>("");
-
-  useEffect(() => {
-    fetch("http://localhost:5001/")
-      .then((response) => response.json())
-      .then((data) => setMessage(data.message))
-      .catch((error) => setMessage(error.message));
-  }, []);
-
   return (
-    <div>
-      <h1 className="bg-amber-500 font-bold text-5xl p-10">HackHeroes</h1>
-      <p>{message}</p>
-    </div>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/application" element={<ApplicationPage />} />
+      <Route path="/chat" element={<ChatPage />} />
+    </Routes>
   );
 };
 
