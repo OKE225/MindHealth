@@ -1,13 +1,13 @@
 import { Link } from "react-router";
 import AnimatedBackground from "../components/AnimatedBackground";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 
 const LandingPage = () => {
   return (
     <>
       <AnimatedBackground />
       <div>
-        <Navbar />
+        <Header />
         <p>Twoje wsparcie dla zdrowia psychicznego każdego dnia</p>
         <Link
           to="/application"

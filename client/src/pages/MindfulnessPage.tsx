@@ -1,7 +1,11 @@
-import React from "react";
+import NavbarWithLinks from "../components/NavbarWithLinks";
 
 const MindfulnessPage = () => {
-  return <div>MindfulnessPage</div>;
+  return (
+    <div>
+      <NavbarWithLinks />
+    </div>
+  );
 };
 
 export default MindfulnessPage;

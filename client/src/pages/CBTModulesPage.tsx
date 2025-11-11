@@ -1,7 +1,11 @@
-import React from "react";
+import NavbarWithLinks from "../components/NavbarWithLinks";
 
 const CBTModulesPage = () => {
-  return <div>CBTModulesPage</div>;
+  return (
+    <div>
+      <NavbarWithLinks />
+    </div>
+  );
 };
 
 export default CBTModulesPage;

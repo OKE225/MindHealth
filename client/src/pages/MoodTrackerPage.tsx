@@ -1,7 +1,11 @@
-import React from "react";
+import NavbarWithLinks from "../components/NavbarWithLinks";
 
 const MoodTrackerPage = () => {
-  return <div>MoodTrackerPage</div>;
+  return (
+    <div>
+      <NavbarWithLinks />
+    </div>
+  );
 };
 
 export default MoodTrackerPage;
