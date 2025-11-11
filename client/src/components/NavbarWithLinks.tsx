@@ -3,16 +3,17 @@ import Header from "./Header";
 
 const NavbarWithLinks = () => {
   const getClassNames = ({ isActive }: { isActive: boolean }) => {
-    const baseStyle = "font-medium text-black text-lg px-4 py-2 rounded-2xl";
+    const baseStyle =
+      "font-semibold text-black text-md px-4 py-2 mx-1 rounded-2xl";
     const activeStyle = isActive
-      ? "bg-blue-600 text-white hover:bg-blue-600"
-      : "hover:bg-sky-200";
+      ? "bg-blue-500 text-white hover:bg-blue-500"
+      : "hover:bg-cyan-200";
 
     return `${baseStyle} ${activeStyle}`;
   };
 
   return (
-    <nav className="bg-white shadow flex justify-between items-center p-3">
+    <nav className="bg-white shadow flex justify-between items-center py-3">
       <Header />
 
       <div>
