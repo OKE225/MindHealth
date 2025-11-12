@@ -13,22 +13,24 @@ const NavbarWithLinks = () => {
   };
 
   return (
-    <nav className="bg-white shadow flex justify-between items-center py-3">
-      <Header />
+    <nav className="bg-white shadow py-3">
+      <div className="flex justify-between items-center w-[80%] mx-auto">
+        <Header />
 
-      <div>
-        <NavLink to="/application" end className={getClassNames}>
-          Panel
-        </NavLink>
-        <NavLink to="/application/mindfulness" className={getClassNames}>
-          Mindfulness
-        </NavLink>
-        <NavLink to="/application/cbt-modules" className={getClassNames}>
-          CBT Modules
-        </NavLink>
-        <NavLink to="/application/mood-tracker" className={getClassNames}>
-          Mood Tracker
-        </NavLink>
+        <div>
+          <NavLink to="/application" end className={getClassNames}>
+            Panel
+          </NavLink>
+          <NavLink to="/application/mindfulness" className={getClassNames}>
+            Mindfulness
+          </NavLink>
+          <NavLink to="/application/cbt-modules" className={getClassNames}>
+            CBT Modules
+          </NavLink>
+          <NavLink to="/application/mood-tracker" className={getClassNames}>
+            Mood Tracker
+          </NavLink>
+        </div>
       </div>
     </nav>
   );

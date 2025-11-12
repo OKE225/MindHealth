@@ -7,9 +7,9 @@ const ApplicationPage = () => {
     <div>
       <NavbarWithLinks />
 
-      <WelcomeMessage />
+      <main className="w-[80%] mx-auto">
+        <WelcomeMessage />
 
-      <main>
         <SelectYourMood />
       </main>
     </div>
