@@ -1,4 +1,4 @@
-import MoodCalendar from "../components/MoodCalendar";
+import CalendarMood from "../components/CalendarMood";
 import NavbarWithLinks from "../components/NavbarWithLinks";
 import SelectYourMood from "../components/SelectYourMood";
 
@@ -9,7 +9,7 @@ const MoodTrackerPage = () => {
 
       <main>
         <SelectYourMood />
-        <MoodCalendar />
+        <CalendarMood />
       </main>
     </div>
   );
