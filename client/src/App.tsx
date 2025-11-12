@@ -5,17 +5,25 @@ import ChatPage from "./pages/ChatPage";
 import MindfulnessPage from "./pages/MindfulnessPage";
 import CBTModulesPage from "./pages/CBTModulesPage";
 import MoodTrackerPage from "./pages/MoodTrackerPage";
+import { ApplicationContext } from "./ApplicationContext";
+import { useState } from "react";
 
 const App = () => {
+  const [nameTodayMood, setNameTodayMood] = useState<string>("");
+
+  const setTodayMood = (name: string) => setNameTodayMood(name);
+
   return (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/application" element={<ApplicationPage />} />
-      <Route path="/application/mindfulness" element={<MindfulnessPage />} />
-      <Route path="/application/cbt-modules" element={<CBTModulesPage />} />
-      <Route path="/application/mood-tracker" element={<MoodTrackerPage />} />
-      <Route path="/chat" element={<ChatPage />} />
-    </Routes>
+    <ApplicationContext.Provider value={{ nameTodayMood, setTodayMood }}>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/application" element={<ApplicationPage />} />
+        <Route path="/application/mindfulness" element={<MindfulnessPage />} />
+        <Route path="/application/cbt-modules" element={<CBTModulesPage />} />
+        <Route path="/application/mood-tracker" element={<MoodTrackerPage />} />
+        <Route path="/chat" element={<ChatPage />} />
+      </Routes>
+    </ApplicationContext.Provider>
   );
 };
 
