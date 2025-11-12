@@ -3,61 +3,69 @@ import happyEmoji from "../assets/icons8-happy-100.png"; // bg-sky-700
 import neutralEmoji from "../assets/icons8-boring-100.png"; // bg-yellow-700
 import badEmoji from "../assets/icons8-sad-100.png"; // bg-orange-700
 import tragicEmoji from "../assets/icons8-disappointed-100.png"; // bg-rose-700
+import { useContext, useMemo } from "react";
+import { ApplicationContext } from "../ApplicationContext";
 
 interface Props {
   name: string;
 }
 
 const MoodCard = ({ name }: Props) => {
-  let containerStyles = "";
-  let iconPath = "";
-  let moodNameStyles = "";
+  const context = useContext(ApplicationContext);
+  if (!context)
+    throw new Error(
+      "MoodCard musi być używany wewnątrz ApplicationContext.Provider"
+    );
 
-  const setMoodColors = (name: string) => {
+  const { setTodayMood } = context;
+
+  const { containerStyles, iconPath, moodNameStyles } = useMemo(() => {
     switch (name) {
       case "Świetnie":
-        containerStyles = "bg-green-200 hover:bg-green-400/75";
-        iconPath = coolEmoji;
-        moodNameStyles = "text-green-900";
-        break;
-
+        return {
+          containerStyles: "bg-green-200 hover:bg-green-400/75",
+          iconPath: coolEmoji,
+          moodNameStyles: "text-green-900",
+        };
       case "Dobrze":
-        containerStyles = "bg-sky-200 hover:bg-sky-400/75";
-        iconPath = happyEmoji;
-        moodNameStyles = "text-sky-900";
-        break;
-
+        return {
+          containerStyles: "bg-sky-200 hover:bg-sky-400/75",
+          iconPath: happyEmoji,
+          moodNameStyles: "text-sky-900",
+        };
       case "Neutralnie":
-        containerStyles = "bg-yellow-200 hover:bg-yellow-400/75";
-        iconPath = neutralEmoji;
-        moodNameStyles = "text-yellow-900";
-        break;
-
+        return {
+          containerStyles: "bg-yellow-200 hover:bg-yellow-400/75",
+          iconPath: neutralEmoji,
+          moodNameStyles: "text-yellow-900",
+        };
       case "Źle":
-        containerStyles = "bg-orange-200 hover:bg-orange-400/75";
-        iconPath = badEmoji;
-        moodNameStyles = "text-orange-900";
-        break;
-
+        return {
+          containerStyles: "bg-orange-200 hover:bg-orange-400/75",
+          iconPath: badEmoji,
+          moodNameStyles: "text-orange-900",
+        };
       case "Tragicznie":
-        containerStyles = "bg-rose-200 hover:bg-rose-400/75";
-        iconPath = tragicEmoji;
-        moodNameStyles = "text-rose-900";
-        break;
-
+        return {
+          containerStyles: "bg-rose-200 hover:bg-rose-400/75",
+          iconPath: tragicEmoji,
+          moodNameStyles: "text-rose-900",
+        };
       default:
-        containerStyles = "bg-stone-200 hover:bg-stone-400/75";
-        iconPath = "";
-        moodNameStyles = "";
-        break;
+        return {
+          containerStyles: "bg-stone-200 hover:bg-stone-400/75",
+          iconPath: "",
+          moodNameStyles: "",
+        };
     }
-  };
-
-  setMoodColors(name);
+  }, [name]);
 
   return (
     <div
-      className={`${containerStyles} p-10 flex flex-col items-center rounded-2xl cursor-pointer`}>
+      className={`${containerStyles} p-10 flex flex-col items-center rounded-2xl cursor-pointer`}
+      onClick={() => {
+        setTodayMood(name);
+      }}>
       <img src={iconPath} className="w-25 mb-2" alt="" />
       <p className={`${moodNameStyles} text-2xl font-bold`}>{name}</p>
     </div>
