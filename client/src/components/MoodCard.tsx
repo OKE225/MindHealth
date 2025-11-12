@@ -60,11 +60,31 @@ const MoodCard = ({ name }: Props) => {
     }
   }, [name]);
 
+  const saveMoodToLocaleStorage = (mood: string) => {
+    const todayDate = new Date().toISOString().substring(0, 10);
+
+    const storedMoods = localStorage.getItem("moods");
+    const moodsArray = storedMoods ? JSON.parse(storedMoods) : [];
+
+    const index = moodsArray.findIndex(
+      (entry: { date: string }) => entry.date === todayDate
+    );
+
+    if (index !== -1) {
+      moodsArray[index].mood = mood;
+    } else {
+      moodsArray.push({ date: todayDate, mood });
+    }
+
+    localStorage.setItem("moods", JSON.stringify(moodsArray));
+  };
+
   return (
     <div
       className={`${containerStyles} p-10 flex flex-col items-center rounded-2xl cursor-pointer`}
       onClick={() => {
         setTodayMood(name);
+        saveMoodToLocaleStorage(name);
       }}>
       <img src={iconPath} className="w-25 mb-2" alt="" />
       <p className={`${moodNameStyles} text-2xl font-bold`}>{name}</p>
