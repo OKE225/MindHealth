@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "imagePath": "",
+    "title": "One-Minute Pause",
+    "description": "Krótkie ćwiczenie do resetu umysłu i ciała w jednej minucie, idealne przy stresie lub przeciążeniu.",
+    "category": "Stress Relief",
+    "duration": "1 minuta",
+    "difficulty": "Łatwy",
+    "exerciseGuide": [
+      "Usiądź lub stań wygodnie, zamknij oczy lub delikatnie spuść wzrok.",
+      "Zwróć uwagę na swoje samopoczucie fizyczne, mentalne i emocjonalne bez oceniania.",
+      "Skoncentruj się na oddechu, wdychaj przez nos, wydychaj powoli przez usta.",
+      "Poszerz swoją świadomość na całe ciało, zauważ wszelkie odczucia lub miejsca ulgi.",
+      "Powoli wróć do codziennych działań, zachowując świadomość chwili obecnej."
+    ]
+  },
+  {
+    "id": 2,
+    "imagePath": "",
+    "title": "STOP Mindfulness Technique",
+    "description": "Ćwiczenie DBT pomagające zdystansować się od negatywnych reakcji emocjonalnych.",
+    "category": "Emotional Regulation",
+    "duration": "2 minuty",
+    "difficulty": "Średni",
+    "exerciseGuide": [
+      "S – Stop: zatrzymaj się, przerwij wszystko co robisz.",
+      "T – Take a breath: weź głęboki oddech.",
+      "O – Observe: zaobserwuj swoje myśli, emocje i odczucia fizyczne bez oceniania.",
+      "P – Proceed mindfully: świadomie wybierz kolejne działanie."
+    ]
+  },
+  {
+    "id": 3,
+    "imagePath": "",
+    "title": "Body Scan Meditation",
+    "description": "Uważne skanowanie ciała, by zanotować napięcia i rozluźnić je.",
+    "category": "Relaxation",
+    "duration": "10 minut",
+    "difficulty": "Średni",
+    "exerciseGuide": [
+      "Połóż się w wygodnej pozycji.",
+      "Skoncentruj uwagę kolejno na każdej części ciała, zaczynając od stóp.",
+      "Zauważ napięcia i pozwól im się rozluźnić.",
+      "Przenieś uwagę w górę ciała do głowy, utrzymując spokojny oddech."
+    ]
+  },
+  {
+    "id": 4,
+    "imagePath": "",
+    "title": "Breathing Awareness",
+    "description": "Skupienie się na naturalnym rytmie oddechu dla uspokojenia układu nerwowego.",
+    "category": "Calming",
+    "duration": "5 minut",
+    "difficulty": "Łatwy",
+    "exerciseGuide": [
+      "Usiądź wygodnie z wyprostowanymi plecami.",
+      "Zwróć uwagę na wdech i wydech, nie zmieniając tempa oddechu.",
+      "Jeśli pojawią się rozproszenia, spokojnie wróć do obserwacji oddechu."
+    ]
+  },
+  {
+    "id": 5,
+    "imagePath": "",
+    "title": "Mindful Self-Compassion Meditation",
+    "description": "Zaawansowane ćwiczenie medytacyjne, które łączy uważność z praktyką współczucia wobec siebie, pomagające radzić sobie z trudnymi emocjami i wzmacniać akceptację samego siebie.",
+    "category": "Emotional Regulation",
+    "duration": "15 minut",
+    "difficulty": "Trudny",
+    "exerciseGuide": [
+      "Usiądź wygodnie w cichym miejscu, zamknij oczy i skup się na oddechu.",
+      "Zwróć uwagę na obecne emocje, nie oceniając ich.",
+      "Wypowiedz w myślach łagodne i wspierające frazy, np. 'Nie jestem sam/sama', 'Nie muszę być idealny/a' lub 'Zasługuję na współczucie'.",
+      "Skieruj tę życzliwość do siebie, wyobrażając sobie ciepłe światło wypełniające ciało i umysł.",
+      "Pozostań w tej uważności i współczuciu przez kilka minut, pozwalając sobie na pełne odczuwanie tych emocji.",
+      "Powoli otwórz oczy i zakończ medytację, zabierając ze sobą poczucie akceptacji."
+    ]
+  },
+  {
+    "id": 6,
+    "imagePath": "",
+    "title": "Sensory Awareness",
+    "description": "Ćwiczenie zwiększające świadomość zmysłów poprzez zwracanie uwagi na otoczenie.",
+    "category": "Mindfulness in Daily Life",
+    "duration": "7 minut",
+    "difficulty": "Łatwy",
+    "exerciseGuide": [
+      "Skup się na dostrzeganiu pięciu rzeczy, które widzisz.",
+      "Następnie zauważ cztery rzeczy, które można usłyszeć.",
+      "Zwróć uwagę na trzy rzeczy, które możesz dotknąć.",
+      "Pomyśł o dwóch rzeczach, które można powąchać.",
+      "Na koniec zauważ jedną rzecz, którą możesz posmakować."
+    ]
+  },
+  {
+    "id": 7,
+    "imagePath": "",
+    "title": "Mindful Walking",
+    "description": "Ćwiczenie uważnego chodzenia, które pomaga w byciu obecnym w chwili.",
+    "category": "Movement",
+    "duration": "8 minut",
+    "difficulty": "Średni",
+    "exerciseGuide": [
+      "Zacznij chodzić powoli, zwracając uwagę na każdy krok.",
+      "Zauważ kontakt stóp z podłożem.",
+      "Skup się na oddechu i ruchu ciała.",
+      "Jeśli umysł odpływa, spokojnie wróć do świadomości kroków."
+    ]
+  },
+  {
+    "id": 8,
+    "imagePath": "",
+    "title": "Progressive Muscle Relaxation",
+    "description": "Technika relaksacji opierająca się na napinaniu i rozluźnianiu mięśni, pomagająca redukować napięcie.",
+    "category": "Calming",
+    "duration": "10 minut",
+    "difficulty": "Średni",
+    "exerciseGuide": [
+      "Usiądź lub połóż się wygodnie.",
+      "Napnij mięśnie stóp na 5 sekund, następnie rozluźnij.",
+      "Przejdź kolejno przez mięśnie łydek, ud, brzucha, ramion, szyi i twarzy, napinając i rozluźniając.",
+      "Skup się na uczuciu ulgi podczas rozluźniania mięśni."
+    ]
+  },
+  {
+    "id": 9,
+    "imagePath": "",
+    "title": "Mindful Stretching",
+    "description": "Powolne, uważne rozciąganie ciała połączone z obserwacją oddechu i odczuć.",
+    "category": "Movement",
+    "duration": "8 minut",
+    "difficulty": "Łatwy",
+    "exerciseGuide": [
+      "Stań lub usiądź wygodnie.",
+      "Powoli unieś ręce nad głowę i wykonaj kilka głębokich oddechów.",
+      "Skoncentruj się na odczuciach w mięśniach podczas rozciągania.",
+      "Powoli przejdź do rozciągania szyi, ramion i tułowia.",
+      "Kończ ćwiczenie spokojnym oddechem."
+    ]
+  }
+]
