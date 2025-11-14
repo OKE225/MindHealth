@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
+const path = require("path");
 const PORT = process.env.PORT || 5001;
 
 const app = express();
@@ -13,9 +14,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/mindfulness", (req, res) => {
-  const exercisesList = JSON.parse(
-    fs.readFileSync("./mindfulness-exercises-list.json", "utf-8")
-  );
+  const filePath = path.join(__dirname, "mindfulness-exercises-list.json");
+
+  const exercisesList = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
   res.json(exercisesList);
 });
