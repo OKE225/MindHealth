@@ -7,6 +7,7 @@ import CBTModulesPage from "./pages/CBTModulesPage";
 import MoodTrackerPage from "./pages/MoodTrackerPage";
 import { ApplicationContext } from "./ApplicationContext";
 import { useState } from "react";
+import ExercisePage from "./pages/ExercisePage";
 
 const App = () => {
   const [nameTodayMood, setNameTodayMood] = useState<string>("");
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/application" element={<ApplicationPage />} />
         <Route path="/application/mindfulness" element={<MindfulnessPage />} />
+        <Route path="/application/mindfulness/:id" element={<ExercisePage />} />
         <Route path="/application/cbt-modules" element={<CBTModulesPage />} />
         <Route path="/application/mood-tracker" element={<MoodTrackerPage />} />
         <Route path="/chat" element={<ChatPage />} />
