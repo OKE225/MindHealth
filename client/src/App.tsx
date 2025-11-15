@@ -7,6 +7,7 @@ import MoodTrackerPage from "./pages/MoodTrackerPage";
 import { ApplicationContext } from "./ApplicationContext";
 import { useState } from "react";
 import ExercisePage from "./pages/ExercisePage";
+import MemorialsPage from "./pages/MemorialsPage";
 
 const App = () => {
   const [nameTodayMood, setNameTodayMood] = useState<string>("");
@@ -18,6 +19,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/application" element={<ApplicationPage />} />
+        <Route path="/memorials" element={<MemorialsPage />} />
         <Route path="/application/mindfulness" element={<MindfulnessPage />} />
         <Route path="/application/mindfulness/:id" element={<ExercisePage />} />
         <Route path="/application/mood-tracker" element={<MoodTrackerPage />} />

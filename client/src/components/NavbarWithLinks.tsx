@@ -21,6 +21,9 @@ const NavbarWithLinks = () => {
           <NavLink to="/application" end className={getClassNames}>
             Panel
           </NavLink>
+          <NavLink to="/memorials" className={getClassNames}>
+            Pamiętnik
+          </NavLink>
           <NavLink to="/application/mindfulness" className={getClassNames}>
             Mindfulness
           </NavLink>
