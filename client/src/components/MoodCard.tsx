@@ -86,8 +86,8 @@ const MoodCard = ({ name }: Props) => {
         setTodayMood(name);
         saveMoodToLocaleStorage(name);
       }}>
-      <img src={iconPath} className="w-25 mb-2" alt="" />
-      <p className={`${moodNameStyles} text-2xl font-bold`}>{name}</p>
+      <img src={iconPath} className="w-20 mb-2" alt="icon" />
+      <p className={`${moodNameStyles} text-xl font-bold`}>{name}</p>
     </div>
   );
 };

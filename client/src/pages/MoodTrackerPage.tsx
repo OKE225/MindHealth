@@ -7,7 +7,7 @@ const MoodTrackerPage = () => {
     <div>
       <NavbarWithLinks />
 
-      <main>
+      <main className="w-[80%] mx-auto">
         <SelectYourMood />
         <CalendarMood />
       </main>
