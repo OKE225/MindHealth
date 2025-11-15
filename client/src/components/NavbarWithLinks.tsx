@@ -24,9 +24,6 @@ const NavbarWithLinks = () => {
           <NavLink to="/application/mindfulness" className={getClassNames}>
             Mindfulness
           </NavLink>
-          <NavLink to="/application/cbt-modules" className={getClassNames}>
-            CBT Modules
-          </NavLink>
           <NavLink to="/application/mood-tracker" className={getClassNames}>
             Mood Tracker
           </NavLink>

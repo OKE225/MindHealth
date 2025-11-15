@@ -3,7 +3,6 @@ import LandingPage from "./pages/LandingPage";
 import ApplicationPage from "./pages/ApplicationPage";
 import ChatPage from "./pages/ChatPage";
 import MindfulnessPage from "./pages/MindfulnessPage";
-import CBTModulesPage from "./pages/CBTModulesPage";
 import MoodTrackerPage from "./pages/MoodTrackerPage";
 import { ApplicationContext } from "./ApplicationContext";
 import { useState } from "react";
@@ -21,7 +20,6 @@ const App = () => {
         <Route path="/application" element={<ApplicationPage />} />
         <Route path="/application/mindfulness" element={<MindfulnessPage />} />
         <Route path="/application/mindfulness/:id" element={<ExercisePage />} />
-        <Route path="/application/cbt-modules" element={<CBTModulesPage />} />
         <Route path="/application/mood-tracker" element={<MoodTrackerPage />} />
         <Route path="/chat" element={<ChatPage />} />
       </Routes>
