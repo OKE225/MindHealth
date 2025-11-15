@@ -8,6 +8,7 @@ import { ApplicationContext } from "./ApplicationContext";
 import { useState } from "react";
 import ExercisePage from "./pages/ExercisePage";
 import MemorialsPage from "./pages/MemorialsPage";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [nameTodayMood, setNameTodayMood] = useState<string>("");
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/application/mood-tracker" element={<MoodTrackerPage />} />
         <Route path="/chat" element={<ChatPage />} />
       </Routes>
+      <Footer />
     </ApplicationContext.Provider>
   );
 };
