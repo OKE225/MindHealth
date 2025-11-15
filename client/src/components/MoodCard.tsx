@@ -23,37 +23,37 @@ const MoodCard = ({ name }: Props) => {
     switch (name) {
       case "Świetnie":
         return {
-          containerStyles: "bg-green-200 hover:bg-green-400/75",
+          containerStyles: "bg-green-100 hover:bg-green-400/75",
           iconPath: coolEmoji,
           moodNameStyles: "text-green-900",
         };
       case "Dobrze":
         return {
-          containerStyles: "bg-sky-200 hover:bg-sky-400/75",
+          containerStyles: "bg-sky-100 hover:bg-sky-400/75",
           iconPath: happyEmoji,
           moodNameStyles: "text-sky-900",
         };
       case "Neutralnie":
         return {
-          containerStyles: "bg-yellow-200 hover:bg-yellow-400/75",
+          containerStyles: "bg-yellow-100 hover:bg-yellow-400/75",
           iconPath: neutralEmoji,
           moodNameStyles: "text-yellow-900",
         };
       case "Źle":
         return {
-          containerStyles: "bg-orange-200 hover:bg-orange-400/75",
+          containerStyles: "bg-orange-100 hover:bg-orange-400/75",
           iconPath: badEmoji,
           moodNameStyles: "text-orange-900",
         };
       case "Tragicznie":
         return {
-          containerStyles: "bg-rose-200 hover:bg-rose-400/75",
+          containerStyles: "bg-rose-100 hover:bg-rose-400/75",
           iconPath: tragicEmoji,
           moodNameStyles: "text-rose-900",
         };
       default:
         return {
-          containerStyles: "bg-stone-200 hover:bg-stone-400/75",
+          containerStyles: "bg-stone-100 hover:bg-stone-400/75",
           iconPath: "",
           moodNameStyles: "",
         };

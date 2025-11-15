@@ -8,7 +8,7 @@ const ExerciseCard = (exercise: MindfulnessExercise) => {
     <Link
       to={`${id}`}
       state={{ exercise }}
-      className="bg-white p-5 rounded-2xl">
+      className="bg-white p-5 shadow rounded-2xl">
       <p className="bg-sky-200 inline-block px-3 rounded-2xl">{category}</p>
       <h3 className="text-2xl">{title}</h3>
       <p className="">{description}</p>

@@ -79,7 +79,7 @@ const CalendarMood = () => {
   };
 
   return (
-    <div>
+    <div className="bg-white inline-block mt-5 p-5 shadow rounded-2xl">
       <DayPicker
         modifiers={modifiers}
         modifiersClassNames={modifiersClassNames}

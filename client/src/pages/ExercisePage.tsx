@@ -13,7 +13,7 @@ const ExercisePage = () => {
     <div>
       <NavbarWithLinks />
       <div className="w-[80%] mx-auto">
-        <div className="bg-white p-5 rounded-2xl mt-10">
+        <div className="bg-white p-5 rounded-2xl shadow mt-10">
           <p className="bg-sky-200 inline-block px-3 rounded-2xl">{category}</p>
           <h3 className="text-2xl">{title}</h3>
           <p className="">{description}</p>
