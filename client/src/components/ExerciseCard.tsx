@@ -1,20 +1,27 @@
 import { Link } from "react-router";
 import type { MindfulnessExercise } from "../types/MindfulnessExercise";
+import { getDifficultyClass } from "../utils/getDifficultyClass";
 
 const ExerciseCard = (exercise: MindfulnessExercise) => {
   const { id, title, description, category, duration, difficulty } = exercise;
+
+  const difficultyClass = getDifficultyClass(difficulty);
 
   return (
     <Link
       to={`${id}`}
       state={{ exercise }}
-      className="bg-white p-5 shadow rounded-2xl">
-      <p className="bg-sky-200 inline-block px-3 rounded-2xl">{category}</p>
-      <h3 className="text-2xl">{title}</h3>
-      <p className="">{description}</p>
-      <div className="flex justify-between">
-        <p>{duration}</p>
-        <p className="bg-green-200 text-green-800 inline-block px-2 rounded-2xl">
+      className="bg-white h-70 p-5 shadow rounded-2xl flex flex-col justify-between">
+      <div>
+        <p className="bg-sky-100 text-sky-900 inline-block px-3 rounded-lg">
+          {category}
+        </p>
+        <h3 className="text-2xl font-semibold">{title}</h3>
+        <p className="">{description}</p>
+      </div>
+      <div className="flex justify-between items-center">
+        <p className="">{duration}</p>
+        <p className={`${difficultyClass} inline-block px-3 rounded-lg`}>
           {difficulty}
         </p>
       </div>
