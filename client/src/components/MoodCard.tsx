@@ -23,37 +23,42 @@ const MoodCard = ({ name }: Props) => {
     switch (name) {
       case "Świetnie":
         return {
-          containerStyles: "bg-emerald-100 hover:bg-emerald-400/75",
+          containerStyles:
+            "bg-emerald-100 hover:bg-emerald-400/75 active:bg-emerald-400",
           iconPath: coolEmoji,
           moodNameStyles: "text-emerald-900",
         };
       case "Dobrze":
         return {
-          containerStyles: "bg-sky-100 hover:bg-sky-400/75",
+          containerStyles: "bg-sky-100 hover:bg-sky-400/75 active:bg-sky-400",
           iconPath: happyEmoji,
           moodNameStyles: "text-sky-900",
         };
       case "Neutralnie":
         return {
-          containerStyles: "bg-yellow-100 hover:bg-yellow-400/75",
+          containerStyles:
+            "bg-yellow-100 hover:bg-yellow-400/75 active:bg-yellow-400",
           iconPath: neutralEmoji,
           moodNameStyles: "text-yellow-900",
         };
       case "Źle":
         return {
-          containerStyles: "bg-orange-100 hover:bg-orange-400/75",
+          containerStyles:
+            "bg-orange-100 hover:bg-orange-400/75 active:bg-orange-400",
           iconPath: badEmoji,
           moodNameStyles: "text-orange-900",
         };
       case "Tragicznie":
         return {
-          containerStyles: "bg-rose-100 hover:bg-rose-400/75",
+          containerStyles:
+            "bg-rose-100 hover:bg-rose-400/75 active:bg-rose-400",
           iconPath: tragicEmoji,
           moodNameStyles: "text-rose-900",
         };
       default:
         return {
-          containerStyles: "bg-stone-100 hover:bg-stone-400/75",
+          containerStyles:
+            "bg-stone-100 hover:bg-stone-400/75 active:bg-stone-400",
           iconPath: "",
           moodNameStyles: "",
         };
@@ -81,7 +86,7 @@ const MoodCard = ({ name }: Props) => {
 
   return (
     <div
-      className={`${containerStyles} p-10 flex flex-col items-center shadow rounded-2xl cursor-pointer`}
+      className={`${containerStyles} p-10 flex flex-col items-center shadow rounded-2xl cursor-pointer active:scale-99 select-none`}
       onClick={() => {
         setTodayMood(name);
         saveMoodToLocaleStorage(name);
