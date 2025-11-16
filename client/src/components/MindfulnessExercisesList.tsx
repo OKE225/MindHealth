@@ -23,7 +23,7 @@ const MindfulnessExercisesList = () => {
   return isLoading ? (
     <div className="w-12 h-12 mx-auto border-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
   ) : (
-    <div className="grid grid-cols-3 gap-5">
+    <div className="grid grid-cols-3 gap-2">
       {exercisesList.map((exercise) => (
         <ExerciseCard key={exercise.id} {...exercise} />
       ))}

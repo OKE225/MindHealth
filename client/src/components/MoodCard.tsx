@@ -23,9 +23,9 @@ const MoodCard = ({ name }: Props) => {
     switch (name) {
       case "Świetnie":
         return {
-          containerStyles: "bg-green-100 hover:bg-green-400/75",
+          containerStyles: "bg-emerald-100 hover:bg-emerald-400/75",
           iconPath: coolEmoji,
-          moodNameStyles: "text-green-900",
+          moodNameStyles: "text-emerald-900",
         };
       case "Dobrze":
         return {
@@ -81,12 +81,12 @@ const MoodCard = ({ name }: Props) => {
 
   return (
     <div
-      className={`${containerStyles} p-10 flex flex-col items-center rounded-2xl cursor-pointer`}
+      className={`${containerStyles} p-10 flex flex-col items-center shadow rounded-2xl cursor-pointer`}
       onClick={() => {
         setTodayMood(name);
         saveMoodToLocaleStorage(name);
       }}>
-      <img src={iconPath} className="w-20 mb-2" alt="icon" />
+      <img src={iconPath} className="w-15 mb-2" alt="icon" />
       <p className={`${moodNameStyles} text-xl font-bold`}>{name}</p>
     </div>
   );

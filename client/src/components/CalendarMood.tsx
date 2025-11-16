@@ -71,7 +71,7 @@ const CalendarMood = () => {
   }
 
   const modifiersClassNames = {
-    coolMood: "bg-green-400 font-semibold",
+    coolMood: "bg-emerald-400 font-semibold",
     happyMood: "bg-sky-400 font-semibold",
     neutralMood: "bg-yellow-400 font-semibold",
     badMood: "bg-orange-400 font-semibold",
