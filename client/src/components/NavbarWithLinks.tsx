@@ -6,8 +6,8 @@ const NavbarWithLinks = () => {
     const baseStyle =
       "font-semibold text-black text-md px-4 py-2 mx-1 rounded-2xl";
     const activeStyle = isActive
-      ? "bg-blue-500 text-white hover:bg-blue-600"
-      : "hover:bg-sky-200";
+      ? "bg-blue-500 text-blue-50 hover:bg-blue-600 shadow"
+      : "hover:bg-sky-200 hover:text-sky-950";
 
     return `${baseStyle} ${activeStyle}`;
   };
@@ -21,7 +21,7 @@ const NavbarWithLinks = () => {
           <NavLink to="/application" end className={getClassNames}>
             Panel
           </NavLink>
-          <NavLink to="/memorials" className={getClassNames}>
+          <NavLink to="/application/diary" className={getClassNames}>
             Pamiętnik
           </NavLink>
           <NavLink to="/application/mindfulness" className={getClassNames}>
