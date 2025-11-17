@@ -9,13 +9,6 @@ const CalendarMood = () => {
     { date: string; mood: string }[]
   >([]);
 
-  useEffect(() => {
-    const moodsFromStorage = localStorage.getItem("moods");
-    if (moodsFromStorage) {
-      setStoredMoods(JSON.parse(moodsFromStorage));
-    }
-  }, []);
-
   const context = useContext(ApplicationContext);
   if (!context)
     throw new Error(
