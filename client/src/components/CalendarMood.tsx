@@ -24,6 +24,11 @@ const CalendarMood = () => {
 
   const { nameTodayMood } = context;
 
+  useEffect(() => {
+    const moodsFromStorage = localStorage.getItem("moods");
+    if (moodsFromStorage) setStoredMoods(JSON.parse(moodsFromStorage));
+  }, [nameTodayMood]);
+
   const getMoodModifierName = (mood: string) => {
     switch (mood) {
       case "Świetnie":
@@ -59,16 +64,6 @@ const CalendarMood = () => {
     const moodModifier = getMoodModifierName(mood);
     if (moodModifier) modifiers[moodModifier].push(new Date(date));
   });
-
-  const today = new Date().toISOString().substring(0, 10);
-
-  const moodName = getMoodModifierName(nameTodayMood);
-  if (
-    moodName &&
-    !modifiers[moodName].some((d) => d.getTime() === new Date(today).getTime())
-  ) {
-    modifiers[moodName].push(new Date(today));
-  }
 
   const modifiersClassNames = {
     coolMood: "bg-emerald-400 font-semibold",
