@@ -1,4 +1,5 @@
 import CalendarMood from "../components/CalendarMood";
+import MoodStatistics from "../components/MoodStatistics";
 import MoodTrackerHeaders from "../components/MoodTrackerHeaders";
 import NavbarWithLinks from "../components/NavbarWithLinks";
 import SelectYourMood from "../components/SelectYourMood";
@@ -12,6 +13,7 @@ const MoodTrackerPage = () => {
         <MoodTrackerHeaders />
         <SelectYourMood />
         <CalendarMood />
+        <MoodStatistics />
       </main>
     </div>
   );
