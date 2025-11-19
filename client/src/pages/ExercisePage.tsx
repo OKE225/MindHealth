@@ -2,6 +2,8 @@ import { useLocation } from "react-router";
 import type { MindfulnessExercise } from "../types/MindfulnessExercise";
 import NavbarWithLinks from "../components/NavbarWithLinks";
 import { getDifficultyClass } from "../utils/getDifficultyClass";
+import { useEffect } from "react";
+import relaxedMusic from "../assets/believe-in-miracle-by-prabajithk.mp3";
 
 const ExercisePage = () => {
   const location = useLocation();
@@ -9,6 +11,19 @@ const ExercisePage = () => {
 
   const { title, description, category, duration, difficulty, exerciseGuide } =
     exercise;
+
+  useEffect(() => {
+    const audio = new Audio(relaxedMusic);
+
+    audio.volume = 0.1;
+    audio.loop = true;
+    audio.play();
+
+    return () => {
+      audio.pause();
+      audio.currentTime = 0;
+    };
+  }, []);
 
   const difficultyClass = getDifficultyClass(difficulty);
 
