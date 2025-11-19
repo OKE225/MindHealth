@@ -5,6 +5,7 @@ import badEmoji from "../assets/icons8-sad-100.png"; // bg-orange-700
 import tragicEmoji from "../assets/icons8-disappointed-100.png"; // bg-rose-700
 import { useContext, useMemo } from "react";
 import { ApplicationContext } from "../ApplicationContext";
+import { mouseClick } from "../utils/mouseClick";
 
 interface Props {
   name: string;
@@ -86,10 +87,11 @@ const MoodCard = ({ name }: Props) => {
 
   return (
     <div
-      className={`${containerStyles} p-10 flex flex-col items-center shadow rounded-2xl cursor-pointer active:scale-99 select-none`}
+      className={`${containerStyles} p-10 flex flex-col items-center shadow rounded-2xl cursor-pointer active:scale-98 select-none`}
       onClick={() => {
         setTodayMood(name);
         saveMoodToLocaleStorage(name);
+        mouseClick();
       }}>
       <img src={iconPath} className="w-15 mb-2" alt="icon" />
       <p className={`${moodNameStyles} text-xl font-bold`}>{name}</p>

@@ -1,9 +1,15 @@
+import { mouseClick } from "../utils/mouseClick";
+
 const DeleteNotesBtn = () => {
   const handleDeleteNotes = () => {
-    if (confirm("Czy na pewno chcesz usunąć wszystkie notatki?")) {
-      localStorage.removeItem("notesList");
-      window.location.reload();
-    }
+    mouseClick();
+
+    setTimeout(() => {
+      if (confirm("Czy na pewno chcesz usunąć wszystkie notatki?")) {
+        localStorage.removeItem("notesList");
+        window.location.reload();
+      }
+    }, 100);
   };
 
   return (

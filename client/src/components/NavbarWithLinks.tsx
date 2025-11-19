@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import Header from "./Header";
+import { mouseClick } from "../utils/mouseClick";
 
 const NavbarWithLinks = () => {
   const getClassNames = ({ isActive }: { isActive: boolean }) => {
@@ -18,16 +19,29 @@ const NavbarWithLinks = () => {
         <Header />
 
         <div className="flex flex-wrap">
-          <NavLink to="/application" end className={getClassNames}>
+          <NavLink
+            to="/application"
+            end
+            className={getClassNames}
+            onClick={mouseClick}>
             Panel
           </NavLink>
-          <NavLink to="/application/diary" className={getClassNames}>
+          <NavLink
+            to="/application/diary"
+            className={getClassNames}
+            onClick={mouseClick}>
             Pamiętnik
           </NavLink>
-          <NavLink to="/application/mindfulness" className={getClassNames}>
+          <NavLink
+            to="/application/mindfulness"
+            className={getClassNames}
+            onClick={mouseClick}>
             Mindfulness
           </NavLink>
-          <NavLink to="/application/mood-tracker" className={getClassNames}>
+          <NavLink
+            to="/application/mood-tracker"
+            className={getClassNames}
+            onClick={mouseClick}>
             Mood Tracker
           </NavLink>
         </div>

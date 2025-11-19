@@ -3,6 +3,7 @@ import NavbarWithLinks from "../components/NavbarWithLinks";
 import { DiaryContext } from "../DiaryContext";
 import { useNavigate } from "react-router";
 import SectionHeaders from "../components/SectionHeaders";
+import { mouseClick } from "../utils/mouseClick";
 
 const AddDiaryNotePage = () => {
   const [content, setContent] = useState("");
@@ -19,20 +20,24 @@ const AddDiaryNotePage = () => {
   const { notesList, addNoteToList } = context;
 
   const handleSave = () => {
-    if (content) {
-      const noteObj = {
-        content,
-        date: new Date().toISOString().substring(0, 10),
-      };
-      addNoteToList(noteObj);
+    mouseClick();
 
-      const updateNotesList = [...notesList, noteObj];
-      localStorage.setItem("notesList", JSON.stringify(updateNotesList));
+    setTimeout(() => {
+      if (content) {
+        const noteObj = {
+          content,
+          date: new Date().toISOString().substring(0, 10),
+        };
+        addNoteToList(noteObj);
 
-      navigate("/application/diary");
-    } else {
-      alert("Zawartość notatki jest pusta");
-    }
+        const updateNotesList = [...notesList, noteObj];
+        localStorage.setItem("notesList", JSON.stringify(updateNotesList));
+
+        navigate("/application/diary");
+      } else {
+        alert("Zawartość notatki jest pusta");
+      }
+    }, 100);
   };
 
   return (
