@@ -1,6 +1,6 @@
 import NavbarWithLinks from "../components/NavbarWithLinks";
+import SectionHeaders from "../components/SectionHeaders";
 import SelectYourMood from "../components/SelectYourMood";
-import WelcomeMessage from "../components/WelcomeMessage";
 
 const ApplicationPage = () => {
   return (
@@ -8,7 +8,10 @@ const ApplicationPage = () => {
       <NavbarWithLinks />
 
       <main className="w-[80%] mx-auto">
-        <WelcomeMessage />
+        <SectionHeaders
+          header="Cześć! Miło Cię Widzieć"
+          description="Rozpocznij swoją podróż w kierunku lepszego zdrowia psychicznego."
+        />
 
         <SelectYourMood />
       </main>

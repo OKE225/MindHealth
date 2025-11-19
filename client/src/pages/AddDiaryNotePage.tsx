@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import NavbarWithLinks from "../components/NavbarWithLinks";
 import { DiaryContext } from "../DiaryContext";
 import { useNavigate } from "react-router";
+import SectionHeaders from "../components/SectionHeaders";
 
 const AddDiaryNotePage = () => {
   const [content, setContent] = useState("");
@@ -39,16 +40,17 @@ const AddDiaryNotePage = () => {
       <NavbarWithLinks />
 
       <main className="w-[80%] mx-auto">
-        <div className="text-center my-10">
-          <h3 className="text-stone-900 text-4xl font-bold capitalize">
-            Dodaj Notatkę
-          </h3>
-        </div>
+        <SectionHeaders
+          header="Dodaj Notatkę"
+          description="Podziel się swoimi przemyśleniami, opowiedz, jak się dziś czujesz i
+            czego się boisz — to przestrzeń tylko dla Ciebie. Dodaj swoje myśli,
+            opisz emocje i obawy — zaufaj sobie i wyraź to, co masz w sercu."
+        />
 
         <div className="relative">
           <textarea
             className="bg-white text-lg block w-full min-h-100 p-2.5 rounded-2xl shadow focus:outline-none focus:shadow-lg resize-none"
-            placeholder="Podziel się swoimi przemyśleniami, opowiedz, jak się dziś czujesz i czego się boisz — to przestrzeń tylko dla Ciebie. Dodaj swoje myśli, opisz emocje i obawy — zaufaj sobie i wyraź to, co masz w sercu <3"
+            placeholder="Zapisz tutaj..."
             value={content}
             onChange={(e) => setContent(e.target.value)}
           />
