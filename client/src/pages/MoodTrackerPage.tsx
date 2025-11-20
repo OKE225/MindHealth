@@ -9,7 +9,7 @@ const MoodTrackerPage = () => {
     <div>
       <NavbarWithLinks />
 
-      <main className="w-[80%] mx-auto">
+      <main className="w-[70%] mx-auto">
         <SectionHeaders
           header="Mood Tracker"
           description="Monitoruj swoje emocje codziennie, aby poprawiać swoje zdrowie

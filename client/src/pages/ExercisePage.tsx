@@ -30,13 +30,15 @@ const ExercisePage = () => {
   return (
     <div>
       <NavbarWithLinks />
-      <div className="w-[80%] mx-auto">
+      <div className="w-[70%] mx-auto">
         <div className="bg-white p-5 rounded-2xl shadow mt-10">
           <p className="bg-sky-100 text-sky-900 inline-block px-3 rounded-lg">
             {category}
           </p>
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="">{description}</p>
+          <h3 className="text-stone-900 text-2xl font-semibold mt-2">
+            {title}
+          </h3>
+          <p className="text-stone-900">{description}</p>
           <div className="flex justify-between">
             <p>{duration}</p>
             <p className={`${difficultyClass} inline-block px-3 rounded-lg`}>
@@ -44,7 +46,9 @@ const ExercisePage = () => {
             </p>
           </div>
           <div className="border-2 border-stone-200 mt-15 p-5 rounded-2xl">
-            <h3 className="text-lg font-medium">Jak wykonać to zadanie?</h3>
+            <h3 className="text-stone-900 text-lg font-medium">
+              Jak wykonać to zadanie?
+            </h3>
             <ol className="list-decimal list-inside">
               {exerciseGuide.map((step: string, id: number) => (
                 <li key={id} className="text-stone-600 my-2 last-of-type:my-0">
