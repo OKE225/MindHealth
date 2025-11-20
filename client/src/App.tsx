@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router";
+import { Navigate, Route, Routes, useLocation } from "react-router";
 import LandingPage from "./pages/LandingPage";
 import ApplicationPage from "./pages/ApplicationPage";
 import MindfulnessPage from "./pages/MindfulnessPage";
@@ -47,6 +47,7 @@ const App = () => {
             path="/application/mood-tracker"
             element={<MoodTrackerPage />}
           />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         {location.pathname !== "/" && <ChatWithAI />}
         {/* <Footer /> */}
