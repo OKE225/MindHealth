@@ -1,11 +1,12 @@
-import coolEmoji from "../assets/icons8-cool-100.png"; // bg-green-700
-import happyEmoji from "../assets/icons8-happy-100.png"; // bg-sky-700
-import neutralEmoji from "../assets/icons8-boring-100.png"; // bg-yellow-700
-import badEmoji from "../assets/icons8-sad-100.png"; // bg-orange-700
-import tragicEmoji from "../assets/icons8-disappointed-100.png"; // bg-rose-700
 import { useContext, useMemo } from "react";
 import { ApplicationContext } from "../ApplicationContext";
 import { mouseClick } from "../utils/mouseClick";
+
+import { BsEmojiLaughingFill } from "react-icons/bs";
+import { BsEmojiSmileFill } from "react-icons/bs";
+import { BsEmojiNeutralFill } from "react-icons/bs";
+import { BsEmojiFrownFill } from "react-icons/bs";
+import { BsEmojiSmileUpsideDownFill } from "react-icons/bs";
 
 interface Props {
   name: string;
@@ -21,39 +22,58 @@ const MoodCard = ({ name }: Props) => {
   const { setTodayMood } = context;
 
   const { containerStyles, iconPath, moodNameStyles } = useMemo(() => {
+    const defaultIconStyles = "text-7xl mb-2";
     switch (name) {
       case "Świetnie":
         return {
           containerStyles:
             "bg-emerald-100 hover:bg-emerald-400/75 active:bg-emerald-400",
-          iconPath: coolEmoji,
+          iconPath: (
+            <BsEmojiLaughingFill
+              className={`fill-emerald-700 ${defaultIconStyles}`}
+            />
+          ),
           moodNameStyles: "text-emerald-900",
         };
       case "Dobrze":
         return {
           containerStyles: "bg-sky-100 hover:bg-sky-400/75 active:bg-sky-400",
-          iconPath: happyEmoji,
+          iconPath: (
+            <BsEmojiSmileFill className={`fill-sky-700 ${defaultIconStyles}`} />
+          ),
           moodNameStyles: "text-sky-900",
         };
       case "Neutralnie":
         return {
           containerStyles:
             "bg-yellow-100 hover:bg-yellow-400/75 active:bg-yellow-400",
-          iconPath: neutralEmoji,
+          iconPath: (
+            <BsEmojiNeutralFill
+              className={`fill-yellow-700 ${defaultIconStyles}`}
+            />
+          ),
           moodNameStyles: "text-yellow-900",
         };
       case "Źle":
         return {
           containerStyles:
             "bg-orange-100 hover:bg-orange-400/75 active:bg-orange-400",
-          iconPath: badEmoji,
+          iconPath: (
+            <BsEmojiFrownFill
+              className={`fill-orange-700 ${defaultIconStyles}`}
+            />
+          ),
           moodNameStyles: "text-orange-900",
         };
       case "Tragicznie":
         return {
           containerStyles:
             "bg-rose-100 hover:bg-rose-400/75 active:bg-rose-400",
-          iconPath: tragicEmoji,
+          iconPath: (
+            <BsEmojiSmileUpsideDownFill
+              className={`fill-rose-700 ${defaultIconStyles}`}
+            />
+          ),
           moodNameStyles: "text-rose-900",
         };
       default:
@@ -93,7 +113,7 @@ const MoodCard = ({ name }: Props) => {
         saveMoodToLocaleStorage(name);
         mouseClick();
       }}>
-      <img src={iconPath} className="w-15 mb-2" alt="icon" />
+      {iconPath}
       <p className={`${moodNameStyles} text-xl font-bold`}>{name}</p>
     </div>
   );
