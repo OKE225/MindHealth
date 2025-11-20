@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { isMoodTodaySelected } from "../utils/isMoodTodaySelected";
 import { calculateMoodStreak } from "../utils/calculateMoodStreak";
+import { FaFire } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
 
 interface MoodEntry {
   date: string;
@@ -49,15 +51,22 @@ const MoodStatistics = () => {
             ? "bg-amber-400 text-amber-900"
             : "bg-stone-400 text-stone-900"
         }`}>
-        <p className="text-5xl">streak</p>
-        <p className="text-5xl">{streak}</p>
-        {/* <p>ICON</p> */}
+        <p className="text-4xl mb-5">streak</p>
+        <p className="flex justify-center items-center gap-2 text-7xl font-bold">
+          {streak}{" "}
+          {isTodayCheck ? (
+            <FaFire className="text-5xl" />
+          ) : (
+            <FaClock className="text-5xl" />
+          )}
+        </p>
       </div>
 
       <div className="bg-white w-[70%] flex flex-col justify-center p-5 ml-5 rounded-2xl shadow">
-        <p className="">
-          Najczęściej czułeś się <strong>{mostFrequentMood.moodName}</strong> –
-          przez{" "}
+        <p>Najczęściej czułeś się</p>
+        <strong>{mostFrequentMood.moodName}</strong>
+        <p>
+          łącznie przez{" "}
           <strong>
             {mostFrequentMood.count}{" "}
             {mostFrequentMood.count === 1 ? "dzień" : "dni"}
