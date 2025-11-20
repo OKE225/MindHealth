@@ -46,7 +46,7 @@ const MoodStatistics = () => {
   return (
     <>
       <div
-        className={`flex flex-col w-[30%] justify-center ml-5 text-center rounded-2xl shadow p-5 ${
+        className={`flex flex-col w-[30%] justify-center ml-5 text-center rounded-2xl shadow p-5 transition-colors duration-500 ease-in-out ${
           isTodayCheck
             ? "bg-amber-400 text-amber-900"
             : "bg-stone-400 text-stone-900"
