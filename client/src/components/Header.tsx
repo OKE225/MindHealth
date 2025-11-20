@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="flex items-center cursor-default">
       <img className="w-10 h-10" src={brainIcon} alt="" />
-      <h1 className="font-light text-4xl ml-2">MindHealth</h1>
+      <h1 className="text-stone-900 font-light text-4xl ml-2">MindHealth</h1>
     </div>
   );
 };

@@ -15,11 +15,11 @@ const ExerciseCard = (exercise: MindfulnessExercise) => {
       className="bg-white min-h-55 p-5 shadow rounded-2xl flex flex-col justify-between"
       onClick={mouseClick}>
       <div>
-        <p className="bg-sky-100 text-sky-900 inline-block px-3 rounded-lg">
+        <p className="bg-sky-50 text-sky-800 inline-block px-3 rounded-lg">
           {category}
         </p>
-        <h3 className="text-2xl font-semibold mt-2">{title}</h3>
-        <p className="line-clamp-3">{description}</p>
+        <h3 className="text-stone-900 text-2xl font-semibold mt-2">{title}</h3>
+        <p className="text-stone-900 line-clamp-3">{description}</p>
       </div>
       <div className="flex justify-between items-center">
         <p className="text-stone-500">{duration}</p>
