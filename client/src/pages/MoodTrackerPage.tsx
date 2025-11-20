@@ -17,8 +17,10 @@ const MoodTrackerPage = () => {
         />
 
         <SelectYourMood />
-        <CalendarMood />
-        <MoodStatistics />
+        <span className="flex mt-5">
+          <CalendarMood />
+          <MoodStatistics />
+        </span>
       </main>
     </div>
   );
