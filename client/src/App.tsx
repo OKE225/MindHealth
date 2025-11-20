@@ -1,7 +1,6 @@
-import { Route, Routes } from "react-router";
+import { Route, Routes, useLocation } from "react-router";
 import LandingPage from "./pages/LandingPage";
 import ApplicationPage from "./pages/ApplicationPage";
-import ChatPage from "./pages/ChatPage";
 import MindfulnessPage from "./pages/MindfulnessPage";
 import MoodTrackerPage from "./pages/MoodTrackerPage";
 import { ApplicationContext } from "./ApplicationContext";
@@ -11,6 +10,7 @@ import DiaryPage from "./pages/DiaryPage";
 import AddDiaryNotePage from "./pages/AddDiaryNotePage";
 import { DiaryContext } from "./DiaryContext";
 import type { NoteType } from "./types/Note";
+import ChatWithAI from "./components/ChatWithAI";
 // import Footer from "./components/Footer";
 
 const App = () => {
@@ -24,6 +24,8 @@ const App = () => {
   const addNoteToList = (note: NoteType) => {
     setNotesList((prevValue) => [...prevValue, note]);
   };
+
+  const location = useLocation();
 
   return (
     <ApplicationContext.Provider value={{ nameTodayMood, setTodayMood }}>
@@ -45,8 +47,8 @@ const App = () => {
             path="/application/mood-tracker"
             element={<MoodTrackerPage />}
           />
-          <Route path="/chat" element={<ChatPage />} />
         </Routes>
+        {location.pathname !== "/" && <ChatWithAI />}
         {/* <Footer /> */}
       </DiaryContext.Provider>
     </ApplicationContext.Provider>
