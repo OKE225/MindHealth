@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "imagePath": "",
+    "imagePath": "one-minute-pause.jpg",
     "title": "One-Minute Pause",
     "description": "Krótkie ćwiczenie do resetu umysłu i ciała w jednej minucie, idealne przy stresie lub przeciążeniu.",
     "category": "Stress Relief",
@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "imagePath": "",
+    "imagePath": "stop-technique.jpg",
     "title": "STOP Mindfulness Technique",
     "description": "Ćwiczenie DBT pomagające zdystansować się od negatywnych reakcji emocjonalnych.",
     "category": "Emotional Regulation",
@@ -32,7 +32,7 @@
   },
   {
     "id": 3,
-    "imagePath": "",
+    "imagePath": "body-scan-meditation.jpg",
     "title": "Body Scan Meditation",
     "description": "Uważne skanowanie ciała, by zanotować napięcia i rozluźnić je.",
     "category": "Relaxation",
@@ -47,7 +47,7 @@
   },
   {
     "id": 4,
-    "imagePath": "",
+    "imagePath": "breathing-awareness.jpg",
     "title": "Breathing Awareness",
     "description": "Skupienie się na naturalnym rytmie oddechu dla uspokojenia układu nerwowego.",
     "category": "Calming",
@@ -61,7 +61,7 @@
   },
   {
     "id": 5,
-    "imagePath": "",
+    "imagePath": "self-compassion-meditation.jpg",
     "title": "Mindful Self-Compassion Meditation",
     "description": "Zaawansowane ćwiczenie medytacyjne, które łączy uważność z praktyką współczucia wobec siebie, pomagające radzić sobie z trudnymi emocjami i wzmacniać akceptację samego siebie.",
     "category": "Emotional Regulation",
@@ -78,7 +78,7 @@
   },
   {
     "id": 6,
-    "imagePath": "",
+    "imagePath": "sensory-awareness.jpg",
     "title": "Sensory Awareness",
     "description": "Ćwiczenie zwiększające świadomość zmysłów poprzez zwracanie uwagi na otoczenie.",
     "category": "Mindfulness in Daily Life",
@@ -94,7 +94,7 @@
   },
   {
     "id": 7,
-    "imagePath": "",
+    "imagePath": "walking.jpg",
     "title": "Mindful Walking",
     "description": "Ćwiczenie uważnego chodzenia, które pomaga w byciu obecnym w chwili.",
     "category": "Movement",
@@ -109,7 +109,7 @@
   },
   {
     "id": 8,
-    "imagePath": "",
+    "imagePath": "progressive-muscle-relaxation.jpg",
     "title": "Progressive Muscle Relaxation",
     "description": "Technika relaksacji opierająca się na napinaniu i rozluźnianiu mięśni, pomagająca redukować napięcie.",
     "category": "Calming",
@@ -124,7 +124,7 @@
   },
   {
     "id": 9,
-    "imagePath": "",
+    "imagePath": "stretching.jpg",
     "title": "Mindful Stretching",
     "description": "Powolne, uważne rozciąganie ciała połączone z obserwacją oddechu i odczuć.",
     "category": "Movement",
