@@ -1,16 +1,15 @@
 import { useLocation } from "react-router";
 import type { MindfulnessExercise } from "../types/MindfulnessExercise";
 import NavbarWithLinks from "../components/NavbarWithLinks";
-import { getDifficultyClass } from "../utils/getDifficultyClass";
 import { useEffect } from "react";
-import relaxedMusic from "../assets/believe-in-miracle-by-prabajithk.mp3";
+import relaxedMusic from "../assets/sounds/believe-in-miracle-by-prabajithk.mp3";
+import ExerciseContent from "../components/ExerciseContent";
 
 const ExercisePage = () => {
   const location = useLocation();
   const exercise = location.state?.exercise as MindfulnessExercise;
 
-  const { title, description, category, duration, difficulty, exerciseGuide } =
-    exercise;
+  const { exerciseGuide } = exercise;
 
   useEffect(() => {
     const audio = new Audio(relaxedMusic);
@@ -25,33 +24,21 @@ const ExercisePage = () => {
     };
   }, []);
 
-  const difficultyClass = getDifficultyClass(difficulty);
-
   return (
     <div>
       <NavbarWithLinks />
-      <div className="w-[70%] mx-auto">
-        <div className="bg-white p-5 rounded-2xl shadow mt-10">
-          <p className="bg-sky-100 text-sky-900 inline-block px-3 rounded-lg">
-            {category}
-          </p>
-          <h3 className="text-stone-900 text-2xl font-semibold mt-2">
-            {title}
-          </h3>
-          <p className="text-stone-900">{description}</p>
-          <div className="flex justify-between">
-            <p>{duration}</p>
-            <p className={`${difficultyClass} inline-block px-3 rounded-lg`}>
-              {difficulty}
-            </p>
+      <div className="w-[50%] mx-auto pb-25">
+        <div className="bg-white shadow rounded-2xl mt-10 flex flex-col justify-between overflow-hidden">
+          <div className="relative">
+            <ExerciseContent {...exercise} />
           </div>
-          <div className="border-2 border-stone-200 mt-15 p-5 rounded-2xl">
-            <h3 className="text-stone-900 text-lg font-medium">
+          <div className="border-2 border-stone-200 mt-15 p-5 m-5 rounded-2xl">
+            <h3 className="text-stone-900 text-xl font-semibold">
               Jak wykonać to zadanie?
             </h3>
             <ol className="list-decimal list-inside">
               {exerciseGuide.map((step: string, id: number) => (
-                <li key={id} className="text-stone-600 my-2 last-of-type:my-0">
+                <li key={id} className="text-stone-600 my-3 last-of-type:my-0">
                   {step}
                 </li>
               ))}
