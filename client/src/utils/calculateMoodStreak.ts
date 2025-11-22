@@ -24,7 +24,7 @@ export const calculateMoodStreak = (moods: MoodEntry[]) => {
 
   const daysSinceLastStreak = dayDiff(lastStreakDay, currentDate);
 
-  if (daysSinceLastStreak > 2) {
+  if (daysSinceLastStreak >= 2) {
     return 0;
   } else {
     let streakCount = 1;
