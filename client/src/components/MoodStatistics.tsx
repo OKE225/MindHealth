@@ -49,7 +49,7 @@ const MoodStatistics = () => {
         className={`flex h-full flex-col justify-center ml-5 text-center rounded-2xl shadow p-5 transition-colors duration-500 ease-in-out select-none ${
           isTodayCheck
             ? "bg-amber-400 text-amber-900"
-            : "bg-stone-400 text-stone-900"
+            : "bg-stone-300 text-stone-800"
         }`}>
         <p className="text-xl font-semibold mb-2">streak</p>
         <p className="flex justify-center items-center text-6xl font-bold">
@@ -57,12 +57,12 @@ const MoodStatistics = () => {
           {isTodayCheck ? (
             <FaFire className="text-4xl" />
           ) : (
-            <FaClock className="text-4xl" />
+            streak !== 0 && <FaClock className="text-4xl ml-1" />
           )}
         </p>
       </div>
 
-      <div className="bg-white text-stone-500 h-auto flex flex-col justify-center p-10 ml-5 rounded-2xl shadow">
+      <div className="bg-white text-stone-500 h-auto flex flex-col justify-center p-5 ml-5 rounded-2xl shadow">
         <p>Najczęściej czułeś się</p>
         <p>
           <strong className="text-stone-900">
