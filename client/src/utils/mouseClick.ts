@@ -1,4 +1,4 @@
-import mouseClickSound from "../assets/mouse-click.mp3";
+import mouseClickSound from "../assets/sounds/mouse-click.mp3";
 
 export const mouseClick = () => {
   const click = new Audio(mouseClickSound);
