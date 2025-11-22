@@ -1,6 +1,6 @@
 const AnimatedBackground = () => {
   return (
-    <div className="absolute w-full h-[25%] bottom-0 overflow-hidden">
+    <div className="absolute w-full h-[40%] bottom-0 overflow-hidden">
       <svg
         viewBox="0 0 1000 200"
         preserveAspectRatio="none"

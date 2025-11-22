@@ -1,5 +1,6 @@
 import type { MindfulnessExercise } from "../types/MindfulnessExercise";
 import { getDifficultyClass } from "../utils/getDifficultyClass";
+import { MdAccessTime } from "react-icons/md";
 
 import oneMinutePause from "../assets/mindfulness/one-minute-pause.jpg";
 import stopTechnique from "../assets/mindfulness/stop-technique.jpg";
@@ -32,17 +33,20 @@ const ExerciseContent = (exercise: MindfulnessExercise) => {
   return (
     <>
       <div>
-        <img src={images[imagePath]} className="w-full" alt="" />
+        <img src={images[imagePath]} className="w-full select-none" alt="" />
         <div className="p-5">
-          <p className="bg-sky-50 text-sky-800 inline-block px-3 rounded-lg">
+          <p className="bg-sky-50 text-sky-800 inline-block px-3 rounded-lg select-none">
             {category}
           </p>
           <h3 className="text-stone-900 text-2xl font-bold mt-3">{title}</h3>
           <p className="text-stone-900 line-clamp-3 mb-15">{description}</p>
         </div>
         <div className="absolute bottom-0 w-full flex justify-between items-center p-5">
-          <p className="text-stone-500">{duration}</p>
-          <p className={`${difficultyClass} inline-block px-3 rounded-lg`}>
+          <p className="text-stone-500 flex items-center">
+            <MdAccessTime className="mr-1" /> {duration}
+          </p>
+          <p
+            className={`${difficultyClass} inline-block px-3 rounded-lg select-none`}>
             {difficulty}
           </p>
         </div>

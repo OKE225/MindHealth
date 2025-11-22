@@ -44,36 +44,38 @@ const MoodStatistics = () => {
   const mostFrequentMood = calculateMostFrequentMood();
 
   return (
-    <>
+    <div className="flex flex-col max-w-100 gap-5">
       <div
-        className={`flex flex-col w-[30%] justify-center ml-5 text-center rounded-2xl shadow p-5 transition-colors duration-500 ease-in-out ${
+        className={`flex h-full flex-col justify-center ml-5 text-center rounded-2xl shadow p-5 transition-colors duration-500 ease-in-out select-none ${
           isTodayCheck
             ? "bg-amber-400 text-amber-900"
             : "bg-stone-400 text-stone-900"
         }`}>
-        <p className="text-4xl mb-5">streak</p>
-        <p className="flex justify-center items-center gap-2 text-7xl font-bold">
+        <p className="text-xl font-semibold mb-2">streak</p>
+        <p className="flex justify-center items-center text-6xl font-bold">
           {streak}{" "}
           {isTodayCheck ? (
-            <FaFire className="text-5xl" />
+            <FaFire className="text-4xl" />
           ) : (
-            <FaClock className="text-5xl" />
+            <FaClock className="text-4xl" />
           )}
         </p>
       </div>
 
-      <div className="bg-white w-[70%] flex flex-col justify-center p-5 ml-5 rounded-2xl shadow">
+      <div className="bg-white text-stone-500 h-auto flex flex-col justify-center p-10 ml-5 rounded-2xl shadow">
         <p>Najczęściej czułeś się</p>
-        <strong>{mostFrequentMood.moodName}</strong>
         <p>
-          łącznie przez{" "}
-          <strong>
+          <strong className="text-stone-900">
+            {mostFrequentMood.moodName}
+          </strong>
+          , łącznie przez{" "}
+          <strong className="text-stone-900">
             {mostFrequentMood.count}{" "}
             {mostFrequentMood.count === 1 ? "dzień" : "dni"}
           </strong>
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

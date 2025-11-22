@@ -147,7 +147,7 @@ const AdvicesSection = () => {
         Porady zdrowia psychicznego
       </h2>
 
-      <div className="bg-blue-100 text-blue-900 mt-5 duration-500 rounded-2xl shadow">
+      <div className="bg-sky-100 text-sky-900 mt-5 duration-500 rounded-2xl shadow">
         <p
           className={`p-5 mt-5 transition-opacity text-xl font-semibold duration-500 rounded-2xl shadow ${
             fade ? "opacity-100" : "opacity-0"

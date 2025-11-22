@@ -10,7 +10,7 @@ const MemorialsPage = () => {
     <div>
       <NavbarWithLinks />
 
-      <main className="w-[70%] mx-auto relative">
+      <main className="w-[70%] mx-auto relative pb-25">
         <SectionHeaders
           header="Pamiętnik Myśli"
           description="Miejsce, w którym możesz swobodnie zapisać swoje myśli, emocje i
