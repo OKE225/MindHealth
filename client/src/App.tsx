@@ -12,6 +12,7 @@ import { DiaryContext } from "./DiaryContext";
 import type { NoteType } from "./types/Note";
 import Chatbot from "./components/Chatbot/Chatbot";
 import type { MindfulnessExercise } from "./types/MindfulnessExercise";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   const [nameTodayMood, setNameTodayMood] = useState<string>(``);
@@ -44,36 +45,41 @@ const App = () => {
   const location = useLocation();
 
   return (
-    <ApplicationContext.Provider
-      value={{
-        nameTodayMood,
-        setTodayMood,
-        exercisesList,
-        isLoadingExercises,
-      }}>
-      <DiaryContext.Provider value={{ notesList, addNoteToList }}>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/application" element={<ApplicationPage />} />
-          <Route path="/application/diary" element={<DiaryPage />} />
-          <Route path="/application/diary/add" element={<AddDiaryNotePage />} />
-          <Route
-            path="/application/mindfulness"
-            element={<MindfulnessPage />}
-          />
-          <Route
-            path="/application/mindfulness/:id"
-            element={<ExercisePage />}
-          />
-          <Route
-            path="/application/mood-tracker"
-            element={<MoodTrackerPage />}
-          />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-        {location.pathname !== "/" && <Chatbot />}
-      </DiaryContext.Provider>
-    </ApplicationContext.Provider>
+    <ScrollToTop>
+      <ApplicationContext.Provider
+        value={{
+          nameTodayMood,
+          setTodayMood,
+          exercisesList,
+          isLoadingExercises,
+        }}>
+        <DiaryContext.Provider value={{ notesList, addNoteToList }}>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/application" element={<ApplicationPage />} />
+            <Route path="/application/diary" element={<DiaryPage />} />
+            <Route
+              path="/application/diary/add"
+              element={<AddDiaryNotePage />}
+            />
+            <Route
+              path="/application/mindfulness"
+              element={<MindfulnessPage />}
+            />
+            <Route
+              path="/application/mindfulness/:id"
+              element={<ExercisePage />}
+            />
+            <Route
+              path="/application/mood-tracker"
+              element={<MoodTrackerPage />}
+            />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+          {location.pathname !== "/" && <Chatbot />}
+        </DiaryContext.Provider>
+      </ApplicationContext.Provider>
+    </ScrollToTop>
   );
 };
 
