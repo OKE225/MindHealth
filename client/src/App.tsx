@@ -10,7 +10,7 @@ import DiaryPage from "./pages/DiaryPage";
 import AddDiaryNotePage from "./pages/AddDiaryNotePage";
 import { DiaryContext } from "./DiaryContext";
 import type { NoteType } from "./types/Note";
-import ChatWithAI from "./components/ChatWithAI";
+import Chatbot from "./components/Chatbot";
 import type { MindfulnessExercise } from "./types/MindfulnessExercise";
 // import Footer from "./components/Footer";
 
@@ -72,7 +72,7 @@ const App = () => {
           />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
-        {location.pathname !== "/" && <ChatWithAI />}
+        {location.pathname !== "/" && <Chatbot />}
         {/* <Footer /> */}
       </DiaryContext.Provider>
     </ApplicationContext.Provider>
