@@ -1,6 +1,6 @@
 import { Link } from "react-router";
-import type { MindfulnessExercise } from "../types/MindfulnessExercise";
-import { mouseClick } from "../utils/mouseClick";
+import type { MindfulnessExercise } from "../../types/MindfulnessExercise";
+import { mouseClick } from "../../utils/mouseClick";
 import ExerciseContent from "./ExerciseContent";
 
 const ExerciseCard = (exercise: MindfulnessExercise) => {

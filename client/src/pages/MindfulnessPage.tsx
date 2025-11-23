@@ -1,4 +1,4 @@
-import MindfulnessExercisesList from "../components/MindfulnessExercisesList";
+import MindfulnessExercisesList from "../components/MindfulnessExercises/MindfulnessExercisesList";
 import NavbarWithLinks from "../components/NavbarWithLinks";
 import SectionHeaders from "../components/SectionHeaders";
 

@@ -10,7 +10,7 @@ import DiaryPage from "./pages/DiaryPage";
 import AddDiaryNotePage from "./pages/AddDiaryNotePage";
 import { DiaryContext } from "./DiaryContext";
 import type { NoteType } from "./types/Note";
-import Chatbot from "./components/Chatbot";
+import Chatbot from "./components/Chatbot/Chatbot";
 import type { MindfulnessExercise } from "./types/MindfulnessExercise";
 
 const App = () => {

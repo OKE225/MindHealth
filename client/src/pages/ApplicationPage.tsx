@@ -1,7 +1,7 @@
 import AdvicesSection from "../components/AdvicesSection";
 import NavbarWithLinks from "../components/NavbarWithLinks";
 import SectionHeaders from "../components/SectionHeaders";
-import SelectYourMood from "../components/SelectYourMood";
+import SelectYourMood from "../components/Mood/SelectYourMood";
 
 const ApplicationPage = () => {
   return (

@@ -1,8 +1,8 @@
-import CalendarMood from "../components/CalendarMood";
-import MoodStatistics from "../components/MoodStatistics";
+import CalendarMood from "../components/Mood/CalendarMood";
+import MoodStatistics from "../components/Mood/MoodStatistics";
 import NavbarWithLinks from "../components/NavbarWithLinks";
 import SectionHeaders from "../components/SectionHeaders";
-import SelectYourMood from "../components/SelectYourMood";
+import SelectYourMood from "../components/Mood/SelectYourMood";
 
 const MoodTrackerPage = () => {
   return (

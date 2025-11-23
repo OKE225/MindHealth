@@ -1,16 +1,16 @@
-import type { MindfulnessExercise } from "../types/MindfulnessExercise";
-import { getDifficultyClass } from "../utils/getDifficultyClass";
+import type { MindfulnessExercise } from "../../types/MindfulnessExercise";
+import { getDifficultyClass } from "../../utils/getDifficultyClass";
 import { MdAccessTime } from "react-icons/md";
 
-import oneMinutePause from "../assets/mindfulness/one-minute-pause.jpg";
-import stopTechnique from "../assets/mindfulness/stop-technique.jpg";
-import bodyScanMeditation from "../assets/mindfulness/body-scan-meditation.jpg";
-import breathingAwareness from "../assets/mindfulness/breathing-awareness.jpg";
-import selfCompassionMeditation from "../assets/mindfulness/self-compassion-meditation.jpg";
-import sensoryAwareness from "../assets/mindfulness/sensory-awareness.jpg";
-import walking from "../assets/mindfulness/walking.jpg";
-import progressiveMuscleRelaxation from "../assets/mindfulness/progressive-muscle-relaxation.jpg";
-import stretching from "../assets/mindfulness/stretching.jpg";
+import oneMinutePause from "../../assets/mindfulness/one-minute-pause.jpg";
+import stopTechnique from "../../assets/mindfulness/stop-technique.jpg";
+import bodyScanMeditation from "../../assets/mindfulness/body-scan-meditation.jpg";
+import breathingAwareness from "../../assets/mindfulness/breathing-awareness.jpg";
+import selfCompassionMeditation from "../../assets/mindfulness/self-compassion-meditation.jpg";
+import sensoryAwareness from "../../assets/mindfulness/sensory-awareness.jpg";
+import walking from "../../assets/mindfulness/walking.jpg";
+import progressiveMuscleRelaxation from "../../assets/mindfulness/progressive-muscle-relaxation.jpg";
+import stretching from "../../assets/mindfulness/stretching.jpg";
 
 const ExerciseContent = (exercise: MindfulnessExercise) => {
   const { imagePath, title, description, category, duration, difficulty } =

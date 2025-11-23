@@ -1,6 +1,6 @@
 import { useContext, useMemo } from "react";
-import { ApplicationContext } from "../ApplicationContext";
-import { mouseClick } from "../utils/mouseClick";
+import { ApplicationContext } from "../../ApplicationContext";
+import { mouseClick } from "../../utils/mouseClick";
 
 import { BsEmojiLaughingFill } from "react-icons/bs";
 import { BsEmojiSmileFill } from "react-icons/bs";

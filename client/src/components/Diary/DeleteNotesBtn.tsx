@@ -1,4 +1,4 @@
-import { mouseClick } from "../utils/mouseClick";
+import { mouseClick } from "../../utils/mouseClick";
 
 const DeleteNotesBtn = () => {
   const handleDeleteNotes = () => {

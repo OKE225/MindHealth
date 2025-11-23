@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TbMessageChatbotFilled } from "react-icons/tb";
 import ChatbotPopup from "./ChatbotPopup";
 import { assistantInfo } from "./assistantInfo";
-import type { ChatType } from "../types/ChatType";
+import type { ChatType } from "../../types/ChatType";
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

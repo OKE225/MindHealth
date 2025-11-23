@@ -3,7 +3,7 @@ import type { MindfulnessExercise } from "../types/MindfulnessExercise";
 import NavbarWithLinks from "../components/NavbarWithLinks";
 import { useEffect } from "react";
 import relaxedMusic from "../assets/sounds/believe-in-miracle-by-prabajithk.mp3";
-import ExerciseContent from "../components/ExerciseContent";
+import ExerciseContent from "../components/MindfulnessExercises/ExerciseContent";
 
 const ExercisePage = () => {
   const location = useLocation();

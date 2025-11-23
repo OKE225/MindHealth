@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { DayPicker } from "react-day-picker";
 import { pl } from "react-day-picker/locale";
 import "react-day-picker/style.css";
-import { ApplicationContext } from "../ApplicationContext";
+import { ApplicationContext } from "../../ApplicationContext";
 
 const CalendarMood = () => {
   const [storedMoods, setStoredMoods] = useState<

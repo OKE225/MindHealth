@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { isMoodTodaySelected } from "../utils/isMoodTodaySelected";
-import { calculateMoodStreak } from "../utils/calculateMoodStreak";
+import { isMoodTodaySelected } from "../../utils/isMoodTodaySelected";
+import { calculateMoodStreak } from "../../utils/calculateMoodStreak";
 import { FaFire } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
 

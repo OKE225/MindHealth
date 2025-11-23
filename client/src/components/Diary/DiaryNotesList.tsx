@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { DiaryContext } from "../DiaryContext";
+import { DiaryContext } from "../../DiaryContext";
 import DiaryNoteCard from "./DiaryNoteCard";
 
 const DiaryNotesList = () => {

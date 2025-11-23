@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import ExerciseCard from "./ExerciseCard";
-import { ApplicationContext } from "../ApplicationContext";
+import { ApplicationContext } from "../../ApplicationContext";
 
 const MindfulnessExercisesList = () => {
   const context = useContext(ApplicationContext);

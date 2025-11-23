@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import type { ChatType } from "../types/ChatType";
+import type { ChatType } from "../../types/ChatType";
 
 interface Props {
   chatHistory: ChatType[];

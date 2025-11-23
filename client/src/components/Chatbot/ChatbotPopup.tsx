@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import ChatbotHeader from "./ChatbotHeader";
 import ChatbotBody from "./ChatbotBody";
 import ChatbotInput from "./ChatbotInput";
-import type { ChatType } from "../types/ChatType";
+import type { ChatType } from "../../types/ChatType";
 
 interface Props {
   chatHistory: ChatType[];

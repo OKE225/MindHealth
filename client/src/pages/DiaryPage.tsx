@@ -1,11 +1,11 @@
 import { Link } from "react-router";
-import DiaryNotesList from "../components/DiaryNotesList";
+import DiaryNotesList from "../components/Diary/DiaryNotesList";
 import NavbarWithLinks from "../components/NavbarWithLinks";
 import SectionHeaders from "../components/SectionHeaders";
-import DeleteNotesBtn from "../components/DeleteNotesBtn";
+import DeleteNotesBtn from "../components/Diary/DeleteNotesBtn";
 import { mouseClick } from "../utils/mouseClick";
 
-const MemorialsPage = () => {
+const DiaryPage = () => {
   return (
     <div>
       <NavbarWithLinks />
@@ -31,4 +31,4 @@ const MemorialsPage = () => {
   );
 };
 
-export default MemorialsPage;
+export default DiaryPage;

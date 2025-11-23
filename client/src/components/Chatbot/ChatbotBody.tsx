@@ -1,4 +1,4 @@
-import type { ChatType } from "../types/ChatType";
+import type { ChatType } from "../../types/ChatType";
 import ChatbotBotResponse from "./ChatbotBotResponse";
 import ChatbotUserResponse from "./ChatbotUserResponse";
 
