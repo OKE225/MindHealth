@@ -12,7 +12,6 @@ import { DiaryContext } from "./DiaryContext";
 import type { NoteType } from "./types/Note";
 import Chatbot from "./components/Chatbot";
 import type { MindfulnessExercise } from "./types/MindfulnessExercise";
-// import Footer from "./components/Footer";
 
 const App = () => {
   const [nameTodayMood, setNameTodayMood] = useState<string>(``);
@@ -73,7 +72,6 @@ const App = () => {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         {location.pathname !== "/" && <Chatbot />}
-        {/* <Footer /> */}
       </DiaryContext.Provider>
     </ApplicationContext.Provider>
   );
