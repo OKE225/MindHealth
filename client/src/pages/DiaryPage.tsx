@@ -19,7 +19,7 @@ const DiaryPage = () => {
 
         <Link
           to="/application/diary/add"
-          className="bg-blue-500 text-blue-50 inline-block font-semibold text-md px-4 py-2 rounded-2xl hover:bg-blue-600 active:bg-blue-700 select-none shadow"
+          className="bg-blue-500 text-white inline-block font-semibold text-md px-4 py-2 rounded-2xl hover:bg-blue-600 active:bg-blue-700 select-none shadow"
           onClick={mouseClick}>
           Dodaj
         </Link>

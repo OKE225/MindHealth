@@ -142,12 +142,12 @@ const AdvicesSection = () => {
   }, []);
 
   return (
-    <div className="bg-white mb-5 p-5 rounded-2xl shadow ">
+    <div className="bg-white mb-5 p-5 rounded-2xl shadow">
       <h2 className="text-stone-900 text-2xl font-bold">
         Porady zdrowia psychicznego
       </h2>
 
-      <div className="bg-sky-100 text-sky-900 mt-5 duration-500 rounded-2xl shadow">
+      <div className="bg-blue-500 text-white mt-5 duration-500 rounded-2xl shadow">
         <p
           className={`p-5 mt-5 transition-opacity text-xl font-semibold duration-500 rounded-2xl shadow ${
             fade ? "opacity-100" : "opacity-0"

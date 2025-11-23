@@ -21,7 +21,7 @@ const LandingPage = () => {
           Przejdź do aplikacji
         </Link>
         <div className="flex gap-15 mt-20 text-left">
-          <div className="bg-white/90 rounded-2xl shadow p-5">
+          <div className="bg-white rounded-2xl shadow p-5">
             <h3 className="text-stone-900 text-2xl font-bold capitalize mb-1">
               Zdrowie psychiczne
             </h3>
@@ -34,7 +34,7 @@ const LandingPage = () => {
               świadomie i regularnie.
             </p>
           </div>
-          <div className="bg-white/90 rounded-2xl shadow p-5">
+          <div className="bg-white rounded-2xl shadow p-5">
             <h3 className="text-stone-900 text-2xl font-bold capitalize mb-1">
               Aktywność fizyczna
             </h3>
@@ -46,7 +46,7 @@ const LandingPage = () => {
               ruch pomaga zapobiegać depresji i poprawia samopoczucie.
             </p>
           </div>
-          <div className="bg-white/90 rounded-2xl shadow p-5">
+          <div className="bg-white rounded-2xl shadow p-5">
             <h3 className="text-stone-900 text-2xl font-bold capitalize mb-1">
               Pokonywanie stresu
             </h3>

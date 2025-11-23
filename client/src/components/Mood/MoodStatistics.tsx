@@ -51,7 +51,7 @@ const MoodStatistics = () => {
             ? "bg-amber-400 text-amber-900"
             : "bg-stone-300 text-stone-800"
         }`}>
-        <p className="text-xl font-semibold mb-2">streak</p>
+        <p className="text-xl font-semibold mb-5">streak</p>
         <p className="flex justify-center items-center text-6xl font-bold">
           {streak}{" "}
           {isTodayCheck ? (

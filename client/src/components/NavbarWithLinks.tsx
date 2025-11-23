@@ -6,7 +6,7 @@ const NavbarWithLinks = () => {
   const getClassNames = ({ isActive }: { isActive: boolean }) => {
     const baseStyle = "font-semibold text-md px-4 py-2 mx-1 rounded-2xl";
     const activeStyle = isActive
-      ? "bg-blue-500 text-blue-50 hover:bg-blue-600 active:bg-blue-700 shadow"
+      ? "bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700 shadow"
       : "hover:bg-sky-200 text-stone-900 hover:text-blue-950 active:bg-sky-300";
 
     return `${baseStyle} ${activeStyle}`;

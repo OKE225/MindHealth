@@ -10,7 +10,7 @@ const ChatbotBotResponse = ({ message }: Props) => {
       <div className="bg-blue-600 p-1.5 rounded-full mr-2">
         <TbMessageChatbotFilled className="fill-white text-2xl" />
       </div>
-      <p className="bg-sky-100 max-w-[70%] py-3 px-4 rounded-xl rounded-bl-none leading-tight">
+      <p className="bg-blue-100 max-w-[70%] py-3 px-4 rounded-xl rounded-bl-none leading-tight">
         {message}
       </p>
     </div>

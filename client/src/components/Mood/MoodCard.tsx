@@ -27,29 +27,29 @@ const MoodCard = ({ name }: Props) => {
       case "Świetnie":
         return {
           containerStyles:
-            "bg-emerald-100 hover:bg-emerald-400/75 active:bg-emerald-400",
+            "bg-emerald-200 hover:bg-emerald-400/75 active:bg-emerald-400",
           iconPath: (
             <BsEmojiLaughingFill
-              className={`fill-emerald-700 ${defaultIconStyles}`}
+              className={`fill-emerald-800 ${defaultIconStyles}`}
             />
           ),
           moodNameStyles: "text-emerald-900",
         };
       case "Dobrze":
         return {
-          containerStyles: "bg-sky-100 hover:bg-sky-400/75 active:bg-sky-400",
+          containerStyles: "bg-sky-200 hover:bg-sky-400/75 active:bg-sky-400",
           iconPath: (
-            <BsEmojiSmileFill className={`fill-sky-700 ${defaultIconStyles}`} />
+            <BsEmojiSmileFill className={`fill-sky-800 ${defaultIconStyles}`} />
           ),
           moodNameStyles: "text-sky-900",
         };
       case "Neutralnie":
         return {
           containerStyles:
-            "bg-yellow-100 hover:bg-yellow-400/75 active:bg-yellow-400",
+            "bg-yellow-200 hover:bg-yellow-400/75 active:bg-yellow-400",
           iconPath: (
             <BsEmojiNeutralFill
-              className={`fill-yellow-700 ${defaultIconStyles}`}
+              className={`fill-yellow-800 ${defaultIconStyles}`}
             />
           ),
           moodNameStyles: "text-yellow-900",
@@ -57,10 +57,10 @@ const MoodCard = ({ name }: Props) => {
       case "Źle":
         return {
           containerStyles:
-            "bg-orange-100 hover:bg-orange-400/75 active:bg-orange-400",
+            "bg-orange-200 hover:bg-orange-400/75 active:bg-orange-400",
           iconPath: (
             <BsEmojiFrownFill
-              className={`fill-orange-700 ${defaultIconStyles}`}
+              className={`fill-orange-800 ${defaultIconStyles}`}
             />
           ),
           moodNameStyles: "text-orange-900",
@@ -68,10 +68,10 @@ const MoodCard = ({ name }: Props) => {
       case "Tragicznie":
         return {
           containerStyles:
-            "bg-rose-100 hover:bg-rose-400/75 active:bg-rose-400",
+            "bg-rose-200 hover:bg-rose-400/75 active:bg-rose-400",
           iconPath: (
             <BsEmojiSmileUpsideDownFill
-              className={`fill-rose-700 ${defaultIconStyles}`}
+              className={`fill-rose-800 ${defaultIconStyles}`}
             />
           ),
           moodNameStyles: "text-rose-900",
@@ -79,7 +79,7 @@ const MoodCard = ({ name }: Props) => {
       default:
         return {
           containerStyles:
-            "bg-stone-100 hover:bg-stone-400/75 active:bg-stone-400",
+            "bg-stone-200 hover:bg-stone-400/75 active:bg-stone-400",
           iconPath: "",
           moodNameStyles: "",
         };
