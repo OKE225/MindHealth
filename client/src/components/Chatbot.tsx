@@ -16,7 +16,6 @@ const Chatbot = () => {
   ]);
 
   const handleClick = () => {
-    console.log("click");
     setIsOpen(!isOpen);
   };
 
