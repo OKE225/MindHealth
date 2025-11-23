@@ -17,12 +17,7 @@ const ChatbotBody = ({ chatBodyRef, chatHistory }: Props) => {
     <div
       className="flex flex-col h-110 px-4 py-2 mb-22 overflow-y-auto"
       ref={chatBodyRef}>
-      <ChatbotBotResponse
-        message="Hey there 💖
-        How can I help you today?"
-      />
-
-      <ChatbotUserResponse message="Cześć jestem użytkownikiem" />
+      <ChatbotBotResponse message="Cześć, jestem Wsparciek! 💙 Jak się dziś czujesz?" />
 
       {chatHistory.map(
         (chat, index) =>
