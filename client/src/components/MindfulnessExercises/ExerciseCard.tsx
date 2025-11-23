@@ -8,7 +8,7 @@ const ExerciseCard = (exercise: MindfulnessExercise) => {
 
   return (
     <Link
-      to={`${id}`}
+      to={`/application/mindfulness/${id}`}
       state={{ exercise }}
       className="bg-white min-h-125 relative shadow rounded-2xl flex flex-col justify-between overflow-hidden hover:shadow-lg hover:scale-99"
       onClick={mouseClick}>
