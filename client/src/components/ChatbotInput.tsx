@@ -1,10 +1,5 @@
 import { useRef } from "react";
-
-interface ChatType {
-  hideInChat?: boolean;
-  role: string;
-  text: string;
-}
+import type { ChatType } from "../types/ChatType";
 
 interface Props {
   chatHistory: ChatType[];

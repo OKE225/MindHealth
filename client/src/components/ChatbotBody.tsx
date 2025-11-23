@@ -1,11 +1,6 @@
+import type { ChatType } from "../types/ChatType";
 import ChatbotBotResponse from "./ChatbotBotResponse";
 import ChatbotUserResponse from "./ChatbotUserResponse";
-
-interface ChatType {
-  hideInChat?: boolean;
-  role: string;
-  text: string;
-}
 
 interface Props {
   chatBodyRef: React.Ref<HTMLDivElement>;
