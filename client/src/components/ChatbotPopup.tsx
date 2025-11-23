@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from "react";
-import { assistantInfo } from "./assistantInfo";
+import { useEffect, useRef } from "react";
 import ChatbotHeader from "./ChatbotHeader";
 import ChatbotBody from "./ChatbotBody";
 import ChatbotInput from "./ChatbotInput";
@@ -10,11 +9,12 @@ interface ChatType {
   text: string;
 }
 
-const ChatbotPopup = () => {
-  const [chatHistory, setChatHistory] = useState<ChatType[]>([
-    { hideInChat: true, role: "model", text: assistantInfo },
-  ]);
+interface Props {
+  chatHistory: ChatType[];
+  setChatHistory: React.Dispatch<React.SetStateAction<ChatType[]>>;
+}
 
+const ChatbotPopup = ({ chatHistory, setChatHistory }: Props) => {
   const chatBodyRef = useRef<HTMLDivElement | null>(null);
 
   const generateBotResponse = async (history: ChatType[]) => {
