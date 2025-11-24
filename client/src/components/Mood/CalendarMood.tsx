@@ -59,11 +59,11 @@ const CalendarMood = () => {
   });
 
   const modifiersClassNames = {
-    coolMood: "bg-emerald-400 font-semibold",
-    happyMood: "bg-sky-400 font-semibold",
-    neutralMood: "bg-yellow-400 font-semibold",
-    badMood: "bg-orange-400 font-semibold",
-    tragicMood: "bg-rose-400 font-semibold",
+    coolMood: "bg-emerald-400 font-bold",
+    happyMood: "bg-sky-400 font-bold",
+    neutralMood: "bg-yellow-400 font-bold",
+    badMood: "bg-orange-400 font-bold",
+    tragicMood: "bg-rose-400 font-bold",
   };
 
   return (
