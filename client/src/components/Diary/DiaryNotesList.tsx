@@ -10,7 +10,7 @@ const DiaryNotesList = () => {
   const { notesList } = context;
 
   return (
-    <div className="grid grid-cols-2 gap-2 my-5">
+    <div className="grid grid-cols-2 gap-2 my-5 max-xl:grid-cols-1">
       {notesList.length > 0 ? (
         notesList.map((note, id) => <DiaryNoteCard key={id} {...note} />)
       ) : (

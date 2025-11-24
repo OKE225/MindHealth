@@ -34,19 +34,23 @@ const ExerciseContent = (exercise: MindfulnessExercise) => {
     <>
       <div>
         <img src={images[imagePath]} className="w-full select-none" alt="" />
-        <div className="p-5">
-          <p className="bg-sky-50 text-sky-800 inline-block px-3 rounded-lg select-none">
+        <div className="p-5 max-md:p-3 max-lg:pt-4">
+          <p className="bg-sky-50 text-sky-800 inline-block px-3 rounded-lg select-none max-lg:text-sm">
             {category}
           </p>
-          <h3 className="text-stone-900 text-2xl font-bold mt-3">{title}</h3>
-          <p className="text-stone-900 line-clamp-3 mb-15">{description}</p>
+          <h3 className="text-stone-900 text-2xl font-bold mt-3 max-lg:mt-1">
+            {title}
+          </h3>
+          <p className="text-stone-900 line-clamp-3 mb-15 max-xl:mb-10">
+            {description}
+          </p>
         </div>
-        <div className="absolute bottom-0 w-full flex justify-between items-center p-5">
-          <p className="text-stone-500 flex items-center">
+        <div className="absolute bottom-0 w-full flex justify-between items-center p-5 max-md:p-4">
+          <p className="text-stone-500 flex items-center max-lg:text-sm">
             <MdAccessTime className="mr-1" /> {duration}
           </p>
           <p
-            className={`${difficultyClass} inline-block px-3 rounded-lg select-none`}>
+            className={`${difficultyClass} inline-block px-3 rounded-lg select-none max-lg:text-sm`}>
             {difficulty}
           </p>
         </div>

@@ -51,7 +51,7 @@ const ChatbotInput = ({
       onSubmit={handleFormSubmit}>
       <input
         type="text"
-        className="w-full border-none outline-1 outline-blue-100 focus-within:outline-2 focus-within:outline-blue-500 rounded-full py-3 px-4"
+        className="w-full border-none outline-1 outline-blue-100 focus-within:outline-2 focus-within:outline-blue-500 rounded-full py-3 px-4 focus-within:shadow-xl"
         placeholder="Napisz wiadomość..."
         ref={inputRef}
       />

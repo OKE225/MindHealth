@@ -67,13 +67,14 @@ const CalendarMood = () => {
   };
 
   return (
-    <div className="bg-white inline-block p-5 shadow rounded-2xl">
+    <div className="bg-white inline-block max-sm:mx-auto p-5 max-sm:p-0 shadow rounded-2xl">
       <DayPicker
         modifiers={modifiers}
         modifiersClassNames={modifiersClassNames}
         navLayout="around"
         locale={pl}
         animate
+        className="max-sm:scale-90"
         mode="single"
       />
     </div>

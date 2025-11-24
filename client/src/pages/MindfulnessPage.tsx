@@ -7,7 +7,7 @@ const MindfulnessPage = () => {
     <div>
       <NavbarWithLinks />
 
-      <main className="w-[70%] mx-auto pb-25">
+      <main className="max-w-325 w-[70%] max-2xl:w-[80%] max-xl:w-[85%] max-lg:w-[90%] max-md:w-[92.5%] mx-auto pb-10">
         <SectionHeaders
           header="Ćwiczenia Mindfulness"
           description="Praktykuj codziennie ćwiczenia mindfulness, aby zmniejszyć stres i

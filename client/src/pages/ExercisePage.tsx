@@ -27,18 +27,21 @@ const ExercisePage = () => {
   return (
     <div>
       <NavbarWithLinks />
-      <div className="w-[50%] mx-auto pb-25">
+
+      <div className="max-w-275 w-[50%] max-2xl:w-[60%] max-xl:w-[65%] max-lg:w-[80%] max-md:w-[90%] max-sm:w-[92.5%] mx-auto pb-10">
         <div className="bg-white shadow rounded-2xl mt-10 flex flex-col justify-between overflow-hidden">
           <div className="relative">
             <ExerciseContent {...exercise} />
           </div>
-          <div className="border-2 border-stone-200 mt-15 p-5 m-5 rounded-2xl">
+          <div className="border-2 border-stone-200 mt-15 max-lg:mt-10 max-sm:mt-5 p-5 max-md:p-3 m-5 max-md:m-3 rounded-2xl">
             <h3 className="text-stone-900 text-xl font-semibold">
               Jak wykonać to zadanie?
             </h3>
             <ol className="list-decimal list-inside">
               {exerciseGuide.map((step: string, id: number) => (
-                <li key={id} className="text-stone-600 my-3 last-of-type:my-0">
+                <li
+                  key={id}
+                  className="text-stone-600 my-3 max-xl:my-2 max-lg:my-1 last-of-type:my-0">
                   {step}
                 </li>
               ))}

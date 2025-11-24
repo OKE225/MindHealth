@@ -10,7 +10,7 @@ const ExerciseCard = (exercise: MindfulnessExercise) => {
     <Link
       to={`/application/mindfulness/${id}`}
       state={{ exercise }}
-      className="bg-white min-h-125 relative shadow rounded-2xl flex flex-col justify-between overflow-hidden hover:shadow-lg hover:scale-99"
+      className="bg-white min-h-125 max-2xl:min-h-110 relative shadow rounded-2xl flex flex-col justify-between overflow-hidden hover:shadow-lg hover:scale-99 transition duration-100 ease-in-out"
       onClick={mouseClick}>
       <ExerciseContent {...exercise} />
     </Link>

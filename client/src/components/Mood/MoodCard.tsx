@@ -22,7 +22,8 @@ const MoodCard = ({ name }: Props) => {
   const { setTodayMood } = context;
 
   const { containerStyles, iconPath, moodNameStyles } = useMemo(() => {
-    const defaultIconStyles = "text-6xl mb-2";
+    const defaultIconStyles =
+      "text-6xl max-xl:text-5xl mb-2 max-md:m-0 max-md:text-6xl max-sm:text-5xl";
     switch (name) {
       case "Świetnie":
         return {
@@ -107,14 +108,17 @@ const MoodCard = ({ name }: Props) => {
 
   return (
     <div
-      className={`${containerStyles} p-10 flex flex-col items-center shadow rounded-2xl cursor-pointer active:scale-99 select-none`}
+      className={`${containerStyles} p-10 max-xl:px-5 max-lg:p-5 max-md:p-3 max-sm:p-2 flex flex-col items-center shadow rounded-2xl cursor-pointer active:scale-99 select-none transition duration-100 ease-in-out`}
       onClick={() => {
         setTodayMood(name);
         saveMoodToLocaleStorage(name);
         mouseClick();
       }}>
       {iconPath}
-      <p className={`${moodNameStyles} text-xl font-bold`}>{name}</p>
+      <p
+        className={`${moodNameStyles} text-xl max-lg:text-lg max-md:hidden font-bold`}>
+        {name}
+      </p>
     </div>
   );
 };

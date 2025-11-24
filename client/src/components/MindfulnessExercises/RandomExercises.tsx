@@ -36,8 +36,7 @@ const RandomExercises = () => {
   return isLoadingExercises ? (
     <div className="w-12 h-12 mx-auto border-4 border-gray-200 border-t-blue-500 rounded-full animate-spin"></div>
   ) : (
-    <div className="grid grid-cols-3 gap-2 ">
-      {/* [&>*:nth-child(3)]:hidden */}
+    <div className="grid grid-cols-3 gap-2 max-lg:[&>*:nth-child(3)]:hidden max-lg:grid-cols-2 max-sm:[&>*:nth-child(2)]:hidden max-sm:grid-cols-1">
       {randomExercises.map((exercise, index) => (
         <ExerciseCard key={index} {...exercise} />
       ))}

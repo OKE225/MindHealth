@@ -10,7 +10,7 @@ const DiaryPage = () => {
     <div>
       <NavbarWithLinks />
 
-      <main className="w-[70%] mx-auto relative pb-25">
+      <main className="max-w-325 w-[70%] max-2xl:w-[80%] max-xl:w-[85%] max-lg:w-[90%] max-md:w-[92.5%] mx-auto relative pb-10">
         <SectionHeaders
           header="Pamiętnik Myśli"
           description="Miejsce, w którym możesz swobodnie zapisać swoje myśli, emocje i
@@ -19,7 +19,7 @@ const DiaryPage = () => {
 
         <Link
           to="/application/diary/add"
-          className="bg-blue-500 text-white inline-block font-semibold text-md px-4 py-2 rounded-2xl hover:bg-blue-600 active:bg-blue-700 select-none shadow"
+          className="bg-blue-500 text-white inline-block font-semibold text-md px-4 py-2 rounded-2xl hover:bg-blue-600 active:bg-blue-700 transition-colors duration-100 ease-in-out select-none shadow"
           onClick={mouseClick}>
           Dodaj
         </Link>

@@ -58,7 +58,7 @@ const ChatbotPopup = ({ chatHistory, setChatHistory }: Props) => {
   }, [chatHistory]);
 
   return (
-    <div className="bg-white relative w-100 my-2 rounded-2xl shadow-xl overflow-hidden">
+    <div className="bg-white relative w-100 max-sm:w-full my-2 rounded-2xl shadow-xl overflow-hidden">
       <ChatbotHeader />
       <ChatbotBody chatBodyRef={chatBodyRef} chatHistory={chatHistory} />
       <ChatbotInput

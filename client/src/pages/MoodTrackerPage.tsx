@@ -9,7 +9,7 @@ const MoodTrackerPage = () => {
     <div>
       <NavbarWithLinks />
 
-      <main className="w-[70%] mx-auto">
+      <main className="max-w-325 w-[70%] max-2xl:w-[80%] max-xl:w-[85%] max-lg:w-[90%] max-md:w-[92.5%] mx-auto pb-10">
         <SectionHeaders
           header="Mood Tracker"
           description="Monitoruj swoje emocje codziennie, aby poprawiać swoje zdrowie
@@ -17,7 +17,7 @@ const MoodTrackerPage = () => {
         />
 
         <SelectYourMood />
-        <span className="flex mt-5">
+        <span className="flex mt-5 max-sm:flex-col">
           <CalendarMood />
           <MoodStatistics />
         </span>

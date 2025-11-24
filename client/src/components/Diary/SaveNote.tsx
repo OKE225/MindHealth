@@ -43,13 +43,13 @@ const SaveNote = () => {
   return (
     <div className="relative">
       <textarea
-        className="bg-white text-lg block w-full min-h-100 p-2.5 rounded-2xl shadow focus:outline-none focus:shadow-lg resize-none"
+        className="bg-white text-lg max-lg:text-base block w-full min-h-100 max-lg:min-h-60 p-2.5 border-2 border-stone-200 rounded-2xl shadow focus:outline-none focus:shadow-lg resize-none"
         placeholder="Zapisz tutaj..."
         value={content}
         onChange={(e) => setContent(e.target.value)}
       />
       <button
-        className="bg-emerald-500 text-white inline-block font-semibold text-md px-4 py-2 rounded-2xl hover:bg-emerald-600 active:bg-emerald-700 shadow cursor-pointer absolute bottom-3 right-3"
+        className="bg-emerald-500 text-white inline-block font-semibold text-md px-4 py-2 rounded-2xl hover:bg-emerald-600 active:bg-emerald-700 transition-colors duration-100 ease-in-out shadow cursor-pointer absolute bottom-3 right-3"
         onClick={handleSave}>
         Zapisz
       </button>
