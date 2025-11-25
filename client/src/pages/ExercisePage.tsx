@@ -41,7 +41,7 @@ const ExercisePage = () => {
               {exerciseGuide.map((step: string, id: number) => (
                 <li
                   key={id}
-                  className="text-stone-600 my-3 max-xl:my-2 max-lg:my-1 last-of-type:my-0">
+                  className="text-stone-600 my-2 max-lg:my-1 last-of-type:my-0">
                   {step}
                 </li>
               ))}

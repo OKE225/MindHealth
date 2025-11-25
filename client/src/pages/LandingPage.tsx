@@ -9,7 +9,7 @@ const LandingPage = () => {
     <div className="h-screen overflow-hidden">
       <AnimatedBackground />
       <Navbar />
-      <main className="flex flex-col items-center justify-center relative max-w-325 w-[70%] max-2xl:w-[80%] max-xl:w-[85%] max-lg:w-[90%] max-md:w-[92.5%] max-sm:w-full text-center h-250 max-xl:h-[80%] text-stone-900 mx-auto z-10">
+      <main className="flex flex-col items-center justify-center relative max-w-325 w-[70%] max-2xl:w-[80%] max-xl:w-[85%] max-lg:w-[90%] max-md:w-[92.5%] max-sm:w-full text-center h-250 max-2xl:h-[80%] text-stone-900 mx-auto z-10">
         <h1 className="text-stone-900 text-5xl max-sm:text-4xl font-extrabold uppercase w-[60%] max-2xl:w-[80%] max-sm:w-[95%]">
           Twoje wsparcie dla zdrowia psychicznego każdego dnia
         </h1>
@@ -20,7 +20,7 @@ const LandingPage = () => {
           <FaBrain className="mr-2" />
           Przejdź do aplikacji
         </Link>
-        <div className="flex gap-5 mt-10 text-left max-xl:hidden">
+        <div className="flex gap-5 mt-10 text-left max-2xl:hidden">
           <div className="bg-white rounded-2xl shadow p-5">
             <h3 className="text-stone-900 text-2xl max-2xl:text-xl font-bold capitalize mb-1">
               Zdrowie psychiczne

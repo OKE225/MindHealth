@@ -108,7 +108,7 @@ const MoodCard = ({ name }: Props) => {
 
   return (
     <div
-      className={`${containerStyles} p-10 max-xl:px-5 max-lg:p-5 max-md:p-3 flex flex-col items-center shadow rounded-2xl cursor-pointer active:scale-99 select-none transition duration-100 ease-in-out`}
+      className={`${containerStyles} p-10 max-xl:px-5 max-lg:p-5 max-md:p-3 max:sm:p-1 flex flex-col items-center shadow rounded-2xl cursor-pointer active:scale-99 select-none transition duration-100 ease-in-out`}
       onClick={() => {
         setTodayMood(name);
         saveMoodToLocaleStorage(name);
